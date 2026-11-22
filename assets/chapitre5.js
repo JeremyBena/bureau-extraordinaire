@@ -126,53 +126,21 @@ function nextChoice(){S.stage=4;setObj(texte("objectifs.ouvrir_prochaine_enquete
  {...libelleAction("ecrans.enquete_libre_terminee.actions.retour_laboratoire"),alt:true,fn:close}
  ])}
 
-function transferMenu(){setObj(texte("objectifs.epilogue_choisir_enquete_reelle_psychologie"));popup(texte("ecrans.choix_theme_epilogue.titre"),texte("ecrans.choix_theme_epilogue.texte"),[
- {...libelleAction("ecrans.choix_theme_epilogue.actions.tcc_peur_araignees"),fn:()=>chooseTransfer('araignees')},
- {...libelleAction("ecrans.choix_theme_epilogue.actions.exposition_repetee_preferences_musicales"),fn:()=>chooseTransfer('musique')},
- {...libelleAction("ecrans.choix_theme_epilogue.actions.age_performances_memoire_etude_observationnelle"),fn:()=>chooseTransfer('memoire')}
- ])}
-function chooseTransfer(id){S.transferTheme=id;transfer1()}
-function transferCtx(){return contenu('epilogue.themes.'+(S.transferTheme||'araignees'))}
-function transfer1(t=''){
- setObj(texte("objectifs.epilogue_reconnaitre_demarche_test_hypothese_nulle"));
- const c=transferCtx();
- popup(texte("questions.hypothese_epilogue.titre", { titre_theme: c.titre.toUpperCase() }),texte("questions.hypothese_epilogue.texte", { presentation_theme: c.presentation, feedback: encadreFeedback(t, "feedback-wrong") }), [
- {...libelleAction("questions.hypothese_epilogue.reponses.absence_effet", { phenomene: c.phenomene.charAt(0).toUpperCase()+c.phenomene.slice(1), mesure: c.mesure }),review:texte("questions.hypothese_epilogue.reponses.absence_effet.feedback"),fn:transferSetup},
- {...libelleAction("questions.hypothese_epilogue.reponses.effet_present"),fn:()=>transfer1(texte("questions.hypothese_epilogue.reponses.effet_present.feedback"))},
- {...libelleAction("questions.hypothese_epilogue.reponses.moyennes_identiques"),fn:()=>transfer1(texte("questions.hypothese_epilogue.reponses.moyennes_identiques.feedback"))},
- {...libelleAction("questions.hypothese_epilogue.reponses.scores_identiques"),fn:()=>transfer1(texte("questions.hypothese_epilogue.reponses.scores_identiques.feedback"))}
- ])
+function transferMenu(){
+ setObj(texte("objectifs.epilogue_choisir_enquete_reelle_psychologie"));
+ popup(texte("ecrans.choix_theme_epilogue.titre"),texte("ecrans.choix_theme_epilogue.texte"),[
+  {...libelleAction("ecrans.choix_theme_epilogue.actions.faire_lien_cours"),gold:true,fn:()=>conceptMatch(0)}
+ ]);
 }
-function transferSetup(t=''){
- const obs=S.transferTheme==='memoire';
- const context=(obs ? texte("questions.simulation_epilogue.contexte.memoire") : texte("questions.simulation_epilogue.contexte.experience"));
- popup(texte("questions.simulation_epilogue.titre"),texte("questions.simulation_epilogue.texte", { contexte: context, feedback: encadreFeedback(t, "feedback-wrong") }), [
- {id:"questions.simulation_epilogue.reponses.repartir_les_scores",label:(obs ? texte("questions.simulation_epilogue.reponses.repartir_les_scores.libelle.memoire") : texte("questions.simulation_epilogue.reponses.repartir_les_scores.libelle.experience")),review:texte("questions.simulation_epilogue.reponses.repartir_les_scores.feedback"),fn:transferData},
- {...libelleAction("questions.simulation_epilogue.reponses.difference_observee"),fn:()=>transferSetup(texte("questions.simulation_epilogue.reponses.difference_observee.feedback"))},
- {...libelleAction("questions.simulation_epilogue.reponses.comparer_scores_identiques"),fn:()=>transferSetup(texte("questions.simulation_epilogue.reponses.comparer_scores_identiques.feedback"))},
- {...libelleAction("questions.simulation_epilogue.reponses.modifier_les_scores"),fn:()=>transferSetup(texte("questions.simulation_epilogue.reponses.modifier_les_scores.feedback"))}
- ])
-}
-function transferData(t=''){popup(texte("questions.interpretation_epilogue.titre"),texte("questions.interpretation_epilogue.texte", { feedback: encadreFeedback(t, "note") }), [
- {...libelleAction("questions.interpretation_epilogue.reponses.frequence_sous_h0"),review:texte("questions.interpretation_epilogue.reponses.frequence_sous_h0.feedback"),fn:transfer2},
- {...libelleAction("questions.interpretation_epilogue.reponses.probabilite_absence_effet"),fn:()=>transferData(texte("questions.interpretation_epilogue.reponses.probabilite_absence_effet.feedback"))},
- {...libelleAction("questions.interpretation_epilogue.reponses.probabilite_de_l_effet"),fn:()=>transferData(texte("questions.interpretation_epilogue.reponses.probabilite_de_l_effet.feedback"))},
- {...libelleAction("questions.interpretation_epilogue.reponses.difference_exacte"),fn:()=>transferData(texte("questions.interpretation_epilogue.reponses.difference_exacte.feedback"))}
- ])}
-function transfer2(t=''){popup(texte("questions.conclusion_epilogue.titre"),texte("questions.conclusion_epilogue.texte", { feedback: encadreFeedback(t, "note") }), [
- {...libelleAction("questions.conclusion_epilogue.reponses.rejeter_absence_effet"),review:texte("questions.conclusion_epilogue.reponses.rejeter_absence_effet.feedback"),fn:()=>conceptMatch(0)},
- {...libelleAction("questions.conclusion_epilogue.reponses.prouver_amelioration"),fn:()=>transfer2(texte("questions.conclusion_epilogue.reponses.prouver_amelioration.feedback"))},
- {...libelleAction("questions.conclusion_epilogue.reponses.probabilite_de_h0"),fn:()=>transfer2(texte("questions.conclusion_epilogue.reponses.probabilite_de_h0.feedback"))},
- {...libelleAction("questions.conclusion_epilogue.reponses.maintenir_absence_effet"),fn:()=>transfer2(texte("questions.conclusion_epilogue.reponses.maintenir_absence_effet.feedback"))}
- ])}
 const matchItems=[
- ["hypothese_nulle",["hypothese_nulle","valeur_p","puissance_statistique","erreur_type_ii"]],
- ["distribution_sous_h0",["distribution_sous_h0","seuil_alpha","erreur_type_i","taille_effet_observee"]],
- ["valeur_p",["valeur_p","probabilite_h0","puissance_statistique","seuil_alpha"]],
- ["seuil_alpha",["seuil_alpha","valeur_p","taille_echantillon","score_moyen"]],
- ["rejet_h0",["rejet_h0","preuve_h0_vraie","calcul_score_individuel","acceptation_certaine_h1"]]
+ ["hypothese_nulle",["hypothese_nulle","hypothese_alternative","valeur_p","seuil_alpha"]],
+ ["distribution_sous_h0",["distribution_sous_h0","valeur_p","seuil_alpha","score_observe"]],
+ ["valeur_p",["valeur_p","seuil_alpha","probabilite_h0","score_candidat"]],
+ ["seuil_alpha",["seuil_alpha","valeur_p","taille_echantillon","taux_reussite"]],
+ ["rejet_h0",["rejet_h0","non_rejet_h0","preuve_h0_fausse","erreur_type_ii"]]
 ];
 function conceptMatch(i,t=''){
+ if(i===0)setObj(texte("objectifs.epilogue_reconnaitre_demarche_test_hypothese_nulle"));
  if(i>=matchItems.length){transferEnd();return}
  const [question, reponses] = matchItems[i];
  const chemin = `questions.associations.${question}`;
