@@ -1,12 +1,12 @@
 {
   "accueil": {
-    "titre_onglet": "Le Bureau de l’extraordinaire — Campagne pédagogique",
-    "surtitre": "Jeu d’enquête · Psychologie et raisonnement scientifique",
+    "titre_onglet": "Le Bureau de l’extraordinaire - NHST",
+    "surtitre": "Jeu d’enquête - Psychologie et raisonnement scientifique",
     "titre": "Le Bureau de l’extraordinaire",
-    "presentation": "Peut-on découvrir des pouvoirs de précognition en observant quelques cartes correctement prédites ? Cinq chapitres pour apprendre à évaluer les observations à partir d’un monde où tout est dû au hasard.",
+    "presentation": "Peut-on découvrir des pouvoirs de précognition en observant quelques cartes correctement prédites ? Cinq chapitres pour mobiliser le test de l’hypothèse nulle.",
     "professeur": "Professeur Sig. Nificatif",
-    "citation": "« L’extraordinaire mérite une enquête ordinaire. »",
-    "commandes": "Cliquez sur les personnages et les objets pour interagir. Un symbole « ! » indique la prochaine étape ; l’objectif reste visible sous la scène.",
+    "citation": "'L’extraordinaire mérite une enquête ordinaire.'",
+    "commandes": "Cliquez sur les personnages et les objets pour interagir. Un symbole « ! » indique la prochaine étape.",
     "portrait_alt": "Portrait pixel art du professeur Sig. Nificatif",
     "ouvrir_a_propos": "ⓘ À propos du jeu",
     "ouvrir_licence": "© Licence",
@@ -42,7 +42,7 @@
         "jouer": "Jouer au chapitre 5 →"
       }
     },
-    "note": "Prototype pédagogique v0.8.1 · Fonctionne localement et sur GitHub Pages · Aucune donnée personnelle n’est recueillie · Les dossiers scénarisés garantissent la progression, les parties virtuelles sont produites par le hasard, et les enquêtes libres sont aléatoires. Les questionnaires pré/post restent à concevoir séparément sur Moodle/Ametice."
+    "note": "Prototype v0.8.1 | Fonctionne sur GitHub Pages | Aucune donnée personnelle n’est collectée | Les dossiers scénarisés garantissent la progression pédagogique."
   },
   "a_propos": {
     "chapitre": {
@@ -52,18 +52,18 @@
           "libelle": "Revenir au jeu"
         }
       },
-      "note": "<div class=\"note\">Les réponses effectuées dans le jeu ne sont pas transmises à l’enseignant. Une éventuelle évaluation pré/post est réalisée séparément sur Ametice (Moodle). Ce jeu n’a pas encore fait l’objet d’une validation de son efficacité pédagogique. Pour simplifier l’enquête, les cartes examinent des performances <b>anormalement élevées</b> ; les tests statistiques réels peuvent également porter sur d’autres formes d’écarts.</div>"
+      "note": "<div class=\"note\">Les réponses effectuées dans le jeu ne sont pas transmises aux enseignant.e.s. Ce jeu n’a pas encore fait l’objet d’une validation de son efficacité pédagogique. Pour simplifier l’enquête, les cartes examinent des performances <b>anormalement élevées.</b></div>"
     },
     "accueil": {
       "titre": "À propos du jeu",
       "fermer": "Fermer",
-      "note": "<div class=\"note\">Les réponses effectuées dans le jeu ne sont pas transmises à l’enseignant. Une éventuelle évaluation pré/post est réalisée séparément sur Ametice (Moodle). Ce jeu n’a pas encore fait l’objet d’une validation de son efficacité pédagogique.</div>"
+      "note": "<div class=\"note\">Les réponses effectuées dans le jeu ne sont pas transmises aux enseignant.e.s. Ce jeu n’a pas encore fait l’objet d’une validation de son efficacité pédagogique.</div>"
     },
     "texte": [
-      "<p><b>Le Bureau de l’extraordinaire</b> est un jeu vidéo pédagogique destiné à faciliter la compréhension de la <b>démarche du test de l’hypothèse nulle</b> (NHST) utilisée en psychologie. Sa durée prévue est d’environ <b>30 à 40 minutes</b> pour les cinq chapitres (estimation à confirmer lors des essais auprès d’étudiants).</p>",
+      "<p><b>Le Bureau de l’extraordinaire</b> est un mini jeu pédagogique visant à faciliter la compréhension de la <b>démarche du test de l’hypothèse nulle</b> (NHST) utilisée en psychologie. Sa durée prévue est d’environ <b>30 à 40 minutes</b> pour les cinq chapitres.</p>",
       "<p>Le jeu prend pour point de départ la <b>précognition</b> : la prétendue capacité à prédire des événements futurs grâce à des pouvoirs psychiques. L’existence de tels pouvoirs n’a pas été établie par des preuves scientifiques robustes et reproductibles. Les pouvoirs attribués aux personnages dans le jeu sont <b>fictifs</b> : ils constituent un dispositif pédagogique pour illustrer le raisonnement statistique, et non une démonstration de phénomènes paranormaux.</p>",
       "<div class=\"line\"></div><p><b>Conception scientifique et pédagogique :</b> Jérémy Béna, maître de conférences en psychologie à Aix-Marseille Université, département de psychologie cognitive, Centre de recherche en psychologie et neurosciences (CRPN, UMR 7077).</p>",
-      "<p><b>Développement du jeu :</b> réalisé avec l’assistance de ChatGPT (OpenAI, modèle GPT-6) pour la programmation, les dialogues et certains éléments graphiques. Les portraits sont des illustrations générées avec une IA et retravaillées pour le jeu.</p>",
+      "<p><b>Développement du jeu :</b> réalisé avec l’assistance de ChatGPT (OpenAI, modèle GPT-6) pour la programmation, les dialogues, et certains éléments graphiques. Les portraits sont des illustrations générées avec une IA et retravaillées pour le jeu.</p>",
       "<p><b>Contact :</b> <a href=\"mailto:jeremy.bena@univ-amu.fr\">jeremy.bena@univ-amu.fr</a>.</p>",
       "<p><b>Fonctionnement :</b> certaines enquêtes sont scénarisées pour assurer la progression pédagogique. Les parties du simulateur utilisent des tirages au hasard ; les enquêtes libres déterminent au hasard les capacités des personnages.</p>",
       "<p><b>Version :</b> prototype 0.8.1, novembre 2026.</p>"
@@ -75,10 +75,7 @@
       "texte": [
         "<p>Le scénario, les dialogues, les textes pédagogiques et les illustrations originales de ce jeu sont proposés sous licence <b>Creative Commons Attribution 4.0 International (CC BY 4.0)</b>, dans la mesure des droits détenus par leur auteur.</p>",
         "<p>Cette licence permet de partager et d’adapter les contenus, y compris commercialement, en créditant leur auteur, en fournissant un lien vers la licence et en signalant les éventuelles modifications.</p>",
-        "<p><b>Attribution proposée :</b> Jérémy Béna (2026), <i>Le Bureau de l’extraordinaire</i>, Aix-Marseille Université, licence CC BY 4.0. Développement assisté par ChatGPT (GPT-6, OpenAI).</p>",
         "<p><a href=\"https://creativecommons.org/licenses/by/4.0/deed.fr\" target=\"_blank\" rel=\"noopener\">Lire la licence CC BY 4.0</a>.</p>",
-        "<div class=\"line\"></div><p><b>À propos du code :</b> Creative Commons déconseille ses licences pour les logiciels. Une licence logicielle distincte, telle que MIT, reste à confirmer avant publication du code comme logiciel libre.</p>",
-        "<p><b>Illustrations :</b> certains portraits sont générés avec une IA ; leur statut légal peut varier selon le pays. Les droits sont concédés dans la mesure où ils existent et peuvent être accordés.</p>"
       ],
       "actions": {
         "revenir_jeu": {
@@ -87,22 +84,20 @@
       }
     },
     "page": {
-      "titre_onglet": "Licence — Le Bureau de l’extraordinaire",
+      "titre_onglet": "Licence - Le Bureau de l’extraordinaire",
       "texte": [
         "<p><a href=\"index.html\">← Retour au jeu</a></p>",
         "<h1>Licence et réutilisation</h1><p><b>Contenus pédagogiques et illustrations originales :</b> CC BY 4.0 International, dans la mesure des droits détenus par leur auteur.</p>",
         "<p>Réutilisation et adaptation autorisées, y compris pour un usage commercial, sous réserve d’attribution et d’indication des modifications.</p>",
-        "<p>Attribution suggérée : Jérémy Béna (2026), <i>Le Bureau de l’extraordinaire</i>, Aix-Marseille Université, <a href=\"https://creativecommons.org/licenses/by/4.0/deed.fr\">CC BY 4.0</a>. Développement assisté par ChatGPT (OpenAI, GPT-6).</p>",
-        "<p><b>Code :</b> une licence logicielle distincte reste à choisir. Creative Commons ne recommande pas CC BY pour le code informatique. Une licence MIT est envisagée, sans être encore adoptée.</p>",
         "<p>Certains portraits sont produits avec un outil de génération d’images. La licence s’applique aux droits éventuellement détenus et susceptibles d’être concédés sur ces œuvres.</p>"
       ]
     }
   },
   "remerciements": {
-    "surtitre": "Enquête terminée · Bureau de l’extraordinaire",
+    "surtitre": "Enquête terminée - Bureau de l’extraordinaire",
     "titre": "Merci d'avoir joué !",
     "fermer": "Revenir aux chapitres",
-    "synthese": "Nous espérons que les enquêtes du Bureau vous ont aidé à mieux comprendre <strong>la démarche du test de l’hypothèse nulle</strong>, telle qu’elle est mobilisée en psychologie : imaginer un monde sans effet, examiner ce qu’on pourrait y observer, puis confronter ces résultats aux observations.",
+    "synthese": "Nous espérons que ce mini jeu vous a aidé à mieux comprendre <strong>la démarche du test de l’hypothèse nulle</strong>, telle qu’elle est mobilisée en psychologie : imaginer un monde dans lequel le phénomène auquel on s'intéresse n'existe pas, examiner ce qu’on pourrait y observer, puis confronter ces résultats aux observations.",
     "precognition": "Le jeu utilise les prétendus <strong>pouvoirs de précognition</strong> pour mettre cette démarche en scène. Le paranormal est un domaine controversé : à ce jour, aucune preuve scientifique robuste et reproductible n’a permis d’établir l’existence de tels pouvoirs. Les capacités attribuées à certains personnages sont entièrement fictives.",
     "james_randi": "Le professeur <strong>Sig. Nificatif</strong> s’inspire librement de <strong>James Randi</strong>, magicien et célèbre sceptique qui a examiné les affirmations de pouvoirs extraordinaires. Pour en savoir plus : <a href=\"https://www.pascalmontembault.com/post/james-randi\" target=\"_blank\" rel=\"noopener noreferrer\">James Randi, le magicien qui démystifia le paranormal</a>.",
     "retours": "<strong>Vos retours nous intéressent !</strong> Qu’avez-vous trouvé clair, difficile, agréable ou à améliorer ? N’hésitez pas à nous écrire à <a href=\"mailto:jeremy.bena@univ-amu.fr?subject=Retour%20sur%20Le%20Bureau%20de%20l%27extraordinaire\">jeremy.bena@univ-amu.fr</a>."
@@ -122,8 +117,8 @@
     "confirmer_recommencer": "Recommencer ce chapitre ?",
     "titre_dialogue": "DIALOGUE",
     "titre_chapitre": "LE BUREAU DE L'EXTRAORDINAIRE",
-    "version": "PROTOTYPE PÉDAGOGIQUE · V0.8.1",
-    "objectif_initial": " — Prendre connaissance de votre mission",
+    "version": "PROTOTYPE | V0.8.1",
+    "objectif_initial": " - Prendre connaissance de votre mission",
     "etiquette_objectif": "OBJECTIF",
     "consignes_scene": "Cliquez sur les objets ou les personnages pour interagir.",
     "plan_alt": "Plan du laboratoire, vue de haut",
@@ -155,7 +150,7 @@
       "star": "Étoile"
     },
     "masquee": "Carte masquée",
-    "correspondance": " — correspondance",
-    "ecart": " — écart"
+    "correspondance": " - correspondance",
+    "ecart": " - écart"
   }
 }
