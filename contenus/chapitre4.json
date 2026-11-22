@@ -1,0 +1,346 @@
+{
+  "interface": {
+    "titre_onglet": "Le Bureau de l'extraordinaire — Chapitre 4 · Le règlement du Bureau",
+    "sous_titre": "Chapitre 04 · Le règlement du Bureau",
+    "note": "Ce prototype fonctionne localement, sans collecte de données. La performance d’Inès (7 sur 20) est scénarisée pour l’apprentissage ; les 20 000 parties du simulateur sont produites par des tirages aléatoires indépendants.",
+    "indice_scene": "Cliquez pour interagir",
+    "commandes": {
+      "aide": "? Aide",
+      "chapitre_precedent": "← Chapitre 3"
+    }
+  },
+  "dialogues": {
+    "mission_ines": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Nous avons vu que les observations peuvent être plus ou moins fréquentes quand tout est dû au hasard. Mais deux enquêteurs pourraient ne pas trouver les mêmes résultats suffisamment surprenants. Il nous faut <b>une règle commune</b>. Commençons par examiner Inès : elle tentera vingt prédictions.",
+      "actions": {
+        "rencontrer_ines_droite": {
+          "libelle": "Rencontrer Inès, à droite →"
+        }
+      }
+    },
+    "invitation_au_simulateur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Inès a réussi sept cartes sur vingt. Est-ce suffisamment inhabituel ? Comparez sa performance avec celle de Salomé, qui en avait réussi huit. Vous trouverez le <b>simulateur en haut à gauche</b>."
+    },
+    "comparaison_deux_dossiers": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Examinons les deux performances dans un monde où <b>tout est tiré au hasard</b>. Nous discuterons ensuite de la règle commune."
+    },
+    "invitation_au_rapport": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Le règlement est maintenant disponible. Pour rédiger vos conclusions sur Inès et Salomé, trouvez le <b>rapport sur la table en bas de cette pièce de gauche</b>."
+    },
+    "invitation_au_terminal": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Inès se trouve à droite. Ses prédictions sont prêtes pour le terminal de tirage."
+    },
+    "attente_ines": {
+      "personnage": "Inès",
+      "texte": "J’attends le signal du professeur Sig. Nificatif pour commencer."
+    },
+    "protocole_ines": {
+      "personnage": "Inès",
+      "texte": "J’ai préparé vingt prédictions, toutes enregistrées avant les tirages. L’ordinateur choisira à chaque fois entre cinq cartes <b>équiprobables</b> : chacune a la même chance, soit une sur cinq, d’être tirée.",
+      "actions": {
+        "passer_terminal": {
+          "libelle": "Passer au terminal →"
+        }
+      }
+    },
+    "predictions_pretes": {
+      "personnage": "Inès",
+      "texte": "Mes prédictions sont prêtes pour le terminal de tirage."
+    },
+    "commentaire_ines": {
+      "personnage": "Inès",
+      "texte": "Sept prédictions correctes sur vingt. Est-ce beaucoup, quand il y a cinq possibilités à chaque fois ?"
+    },
+    "terminal_verrouille": {
+      "personnage": "Terminal",
+      "texte": "Parlez d’abord avec Inès."
+    },
+    "orientation_simulateur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "actions": {
+        "ouvrir_simulateur": {
+          "libelle": "Ouvrir le simulateur →"
+        },
+        "revoir_reponses": {
+          "libelle": "Revoir les réponses"
+        }
+      }
+    },
+    "simulateur_verrouille": {
+      "personnage": "Simulateur S-04",
+      "texte": "Terminez d’abord les tirages."
+    },
+    "explication_reglement": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Notre seuil commun est fixé : <b>5 %</b>. Comparez maintenant les résultats d’Inès et de Salomé à ce seuil. Les rapports se trouvent <b>en bas à gauche</b>, sur la grande feuille.",
+      "actions": {
+        "aller_bureau_rapports": {
+          "libelle": "Aller au bureau des rapports →"
+        }
+      }
+    },
+    "rapport_indisponible": {
+      "personnage": "Bureau des rapports",
+      "texte": "Les rapports seront disponibles une fois le règlement adopté. Le simulateur est en haut à gauche."
+    }
+  },
+  "questions": {
+    "comparaison_ines_salome": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Inès a réussi <b>7 prédictions sur 20</b>. Salomé en avait réussi <b>8</b> sur le même nombre de cartes. Comment les comparer ?",
+      "reponses": {
+        "frequence_sans_pouvoir": {
+          "libelle": "Je voudrais savoir à quelle fréquence ces performances apparaissent sans pouvoirs.",
+          "feedback": "C’est exactement la comparaison qui permettra de juger si chacune des deux performances est inhabituelle."
+        },
+        "preuve_pouvoir_salome": {
+          "libelle": "Salomé possède certainement un pouvoir : elle a gagné une carte de plus.",
+          "feedback": "Une différence d’une carte ne permet pas, à elle seule, de connaître la vérité. Comparons ces résultats aux parties où tout est dû au hasard."
+        },
+        "preuve_absence_pouvoir": {
+          "libelle": "Les deux résultats prouvent que les candidates n’ont aucun pouvoir.",
+          "feedback": "Ni sept ni huit réussites ne permettent d’établir avec certitude l’absence de capacités. Comparons d’abord leur rareté sans pouvoirs."
+        }
+      }
+    },
+    "choix_regle_commune": {
+      "titre": "LE RÈGLEMENT — POURQUOI UNE RÈGLE ?",
+      "texte": [
+        "<div class=\"person\">Professeur Sig. Nificatif</div><p>Quand une performance est-elle <b>assez rare</b> pour remettre en question l’absence de pouvoirs ?</p>",
+        "<p>Sans règlement commun, chaque enquêteur pourrait prendre une décision différente devant les mêmes résultats.</p>{{feedback}}"
+      ],
+      "reponses": {
+        "regle_identique": {
+          "libelle": "Il faut une règle de décision identique pour tous les dossiers.",
+          "feedback": "Le Bureau décide à l’avance quel degré de rareté conduit à remettre en question l’absence de pouvoirs."
+        },
+        "regle_par_candidat": {
+          "libelle": "On doit choisir une règle différente pour chaque candidat.",
+          "feedback": "Ce serait une façon de décider selon nos préférences. Une règle commune définie à l’avance rend les enquêtes plus cohérentes."
+        },
+        "declaration_du_candidat": {
+          "libelle": "Il suffit de demander au candidat s’il est certain de son don.",
+          "feedback": "La croyance de la candidate en ses propres pouvoirs ne suffit pas pour établir qu’elle possède réellement un pouvoir !"
+        }
+      },
+      "actions": {
+        "revoir_parties_simulees": {
+          "libelle": "Revoir les parties simulées"
+        }
+      }
+    },
+    "interpretation_seuil": {
+      "titre": "LE RÈGLEMENT — CINQ SUR CENT",
+      "texte": [
+        "<p>Le professeur Sig. Nificatif propose : « Nous remettrons en question l’absence de pouvoirs seulement si, <b>quand tout est dû au hasard</b>, la performance observée ou une meilleure survient dans <b>au plus 5 % des cas</b>. »</p>",
+        "<p><b>Que signifie ce seuil de 5 % ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "frequence_performances_sans_pouvoir": {
+          "libelle": "Parmi 100 parties virtuelles réalisées entièrement au hasard (20 tirages chacune), 5 au maximum obtiendraient autant de réussites que la candidate, ou davantage.",
+          "feedback": "Le seuil concerne la fréquence des résultats sous le modèle sans pouvoirs, pas la probabilité que le candidat possède un don."
+        },
+        "probabilite_absence_pouvoir": {
+          "libelle": "Une chance sur vingt que le candidat soit réellement sans pouvoirs.",
+          "feedback": "Ce nombre parle de performances possibles sous une hypothèse, et non des chances que cette hypothèse soit vraie."
+        },
+        "tolerance_erreurs": {
+          "libelle": "Une tolérance de cinq erreurs de prédiction sur vingt.",
+          "feedback": "Le règlement concerne la fréquence des performances au moins aussi bonnes que celle observée, pas le nombre d’erreurs du candidat."
+        }
+      },
+      "actions": {
+        "retour_question_precedente": {
+          "libelle": "Retour à la question précédente"
+        }
+      }
+    },
+    "decision_ines": {
+      "titre": "RAPPORT Nº 004 — INÈS",
+      "texte": [
+        "<p>Inès : <b>7 réussites sur 20</b>. Au hasard, obtenir au moins 7 réussites arrive environ <b>{{probabilite}} %</b> du temps.</p>",
+        "<p>Règlement du Bureau : remettre en question l’absence de pouvoirs si cette fréquence est <b>inférieure ou égale à 5 %</b>.</p>",
+        "<p><b>Quelle décision faut-il prendre ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "maintenir_absence_pouvoir": {
+          "libelle": "Ne pas remettre en question l’absence de pouvoirs : le résultat ne franchit pas le seuil.",
+          "feedback": "8,67 % dépasse le seuil de 5 %. Les données ne justifient donc pas le rejet du modèle sans pouvoirs ; elles ne prouvent pas l’absence de pouvoir."
+        },
+        "rejeter_car_au_dessus_moyenne": {
+          "libelle": "Remettre en question l’absence de pouvoirs : sept réussites sont supérieures à quatre.",
+          "feedback": "Sept réussites sont au-dessus de la moyenne de quatre, mais ce n’est pas notre règle : il faut comparer la fréquence des résultats à 5 %."
+        },
+        "certitude_absence_pouvoir": {
+          "libelle": "Conclure qu’Inès n’a certainement aucun pouvoir.",
+          "feedback": "Ne pas remettre en question l’absence de pouvoirs n’est pas la même chose que démontrer qu’ils n’existent pas."
+        }
+      },
+      "actions": {
+        "retourner_simulateur": {
+          "libelle": "Retourner au simulateur"
+        }
+      }
+    },
+    "decision_salome": {
+      "titre": "RAPPORT Nº 003 — SALOMÉ",
+      "texte": [
+        "<p>Salomé : <b>8 réussites sur 20</b>. Au hasard, obtenir au moins 8 réussites arrive environ <b>{{probabilite}} %</b> du temps.</p>",
+        "<p>Seuil du Bureau : <b>5 %</b>.</p>",
+        "<p><b>Quelle décision faut-il prendre ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "rejeter_absence_pouvoir": {
+          "libelle": "Remettre en question l’absence de pouvoirs : le résultat franchit le seuil.",
+          "feedback": "3,21 % est inférieur à 5 %. Le règlement conduit à remettre en question le modèle sans pouvoirs, sans démontrer que Salomé en possède."
+        },
+        "maintenir_car_douze_erreurs": {
+          "libelle": "Ne pas remettre en question l’absence de pouvoirs, car Salomé s’est trompée douze fois.",
+          "feedback": "Une performance n’a pas besoin d’être parfaite. Le règlement porte sur sa rareté sous les règles du hasard."
+        },
+        "probabilite_du_pouvoir": {
+          "libelle": "Conclure que Salomé possède des pouvoirs avec une probabilité de 96,79 %.",
+          "feedback": "Le pourcentage de 3,21 % porte sur les performances sous le hasard. Il ne permet pas de calculer la probabilité que Salomé possède un pouvoir."
+        }
+      },
+      "actions": {
+        "relire_rapport_ines": {
+          "libelle": "Relire le rapport d’Inès"
+        }
+      }
+    }
+  },
+  "ecrans": {
+    "dossier_ines": {
+      "titre": "DOSSIER Nº 004 — LE RÈGLEMENT DU BUREAU",
+      "texte": [
+        "<div class=\"introart\" aria-hidden=\"true\">⚖</div><p>Deux performances différentes peuvent être étonnantes, mais le Bureau doit maintenant décider <b>quand ses enquêteurs sont autorisés à remettre en question l’absence de pouvoirs</b>.</p>",
+        "<p>Le professeur Sig. Nificatif propose d’adopter une règle commune.</p>",
+        "<p class=\"tiny\">Cliquez sur les personnages et les appareils du laboratoire pour interagir. L’objectif reste affiché sous le jeu.</p>"
+      ],
+      "actions": {
+        "ouvrir_dossier": {
+          "libelle": "Ouvrir le dossier →"
+        }
+      }
+    },
+    "panneau_zener": {
+      "titre": "LES CINQ CARTES DE ZENER",
+      "texte": "<p>Chaque carte peut être choisie avec la <b>même probabilité (une chance sur cinq)</b>. Cela signifie qu’elles sont <b>équiprobables</b>.</p>{{cartes}}<p class=\"tiny\">Chaque tirage est indépendant : la carte tirée précédemment ne change pas les chances du suivant.</p>",
+      "actions": {
+        "revenir": {
+          "libelle": "Revenir"
+        }
+      }
+    },
+    "series_ines": {
+      "titre": {
+        "apres_tirages": "EXPÉRIENCE — 7 SUR 20",
+        "avant_tirages": "EXPÉRIENCE — INÈS"
+      },
+      "texte": [
+        "<p class=\"tiny\">Les vingt prédictions ont été enregistrées à l’avance. Révélez les cartes par séries de cinq, puis revenez les examiner.</p>",
+        "<div class=\"series-tabs\">{{onglets_series}}</div><div class=\"small-label\">Prédictions d’Inès</div>{{predictions}}<div class=\"small-label\">Cartes tirées par l’ordinateur</div>{{cartes_tirees}}<p class=\"emph\" style=\"text-align:center\">{{cartes_revelees}} cartes révélées · {{reussites}} réussites</p>"
+      ],
+      "actions": {
+        "comparer_cette_performance": {
+          "libelle": "Comparer cette performance →"
+        },
+        "revenir_salle": {
+          "libelle": "Revenir dans la salle"
+        },
+        "revoir_series": {
+          "libelle": "Revoir les séries"
+        },
+        "reveler_serie": {
+          "libelle": "Révéler la série {{numero_serie}} →"
+        }
+      }
+    },
+    "simulateur": {
+      "titre": "SIMULATEUR S-04 — DEUX DOSSIERS",
+      "variantes": {
+        "texte_resume_parties": {
+          "avec_parties": "Parmi ces {{parties}} parties, {{parties_au_moins_7}} ont atteint 7 réussites ou davantage et {{parties_au_moins_8}} en ont atteint 8 ou davantage.",
+          "sans_partie": "Commencez par générer des parties pour découvrir la répartition des réussites."
+        }
+      },
+      "texte": "<p class=\"tiny\">L’ordinateur fabrique des <b>parties virtuelles</b> : vingt prédictions et vingt tirages aléatoires, sans aucun personnage ni pouvoir. Chaque barre montre combien de parties ont obtenu un nombre donné de réussites. Les barres dorées correspondent aux performances de 8 ou davantage.</p>{{histogramme}}<div class=\"stats\"><div class=\"stat\"><b>{{parties}}</b><span>parties créées</span></div><div class=\"stat\"><b>{{frequence_au_moins_7}}</b><span>7 réussites ou + (Inès)</span></div><div class=\"stat\"><b>{{frequence_au_moins_8}}</b><span>8 réussites ou + (Salomé)</span></div></div><p class=\"tiny\">{{resume_parties}}</p>",
+      "actions": {
+        "generer_100_parties": {
+          "libelle": "Générer 100 parties →"
+        },
+        "generer_10_000_parties": {
+          "libelle": "Générer 10 000 parties →"
+        },
+        "etablir_regle_commune": {
+          "libelle": "Établir une règle commune →"
+        },
+        "creer_20_000_autres_parties": {
+          "libelle": "Créer 20 000 autres parties"
+        },
+        "revenir_laboratoire": {
+          "libelle": "Revenir au laboratoire"
+        }
+      },
+      "effectif_barre": "{{score}} réussites : {{effectif}} parties"
+    },
+    "fin_chapitre": {
+      "titre": "CHAPITRE 4 TERMINÉ",
+      "texte": [
+        "<p class=\"person\">Le règlement du Bureau est adopté.</p>",
+        "<div class=\"compare\"><p><b>Inès : 7/20</b> → 8,67 % au hasard → ne pas remettre en question l’absence de pouvoirs.</p>",
+        "<p><b>Salomé : 8/20</b> → 3,21 % au hasard → remettre en question l’absence de pouvoirs.</p>",
+        "</div><p><b>Professeur Sig. Nificatif :</b> « Nous avons choisi un seuil de 5 % <b>avant</b> de statuer. Nous avons utilisé la même règle pour les deux dossiers. Mais... même en suivant correctement cette règle, pourrions-nous malgré tout nous tromper ? »</p>",
+        "<div class=\"note\">Le règlement détermine une <b>décision</b>. Il ne révèle pas la vérité sur les capacités des candidats.</div>"
+      ],
+      "actions": {
+        "passer_chapitre_5_prix_incertitude": {
+          "libelle": "Passer au chapitre 5 : « Le prix de l’incertitude » →"
+        },
+        "revenir_laboratoire": {
+          "libelle": "Revenir au laboratoire"
+        }
+      }
+    },
+    "aide": {
+      "titre": "AIDE — CHAPITRE 4",
+      "texte": [
+        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la grande feuille en bas à gauche.</p>",
+        "<p><b>À gauche :</b> professeur Sig. Nificatif, simulateur en haut, rapports sur la grande feuille en bas. <b>À droite :</b> Inès, panneau de Zener, terminal en bas.</p>",
+        "<p>Une <b>partie virtuelle</b> est une série de prédictions et de cartes produites au hasard par le programme : aucune personne n’y participe.</p>"
+      ],
+      "actions": {
+        "reprendre": {
+          "libelle": "Reprendre"
+        }
+      }
+    }
+  },
+  "objectifs": {
+    "parler_professeur_sig_nificatif_piece_gauche": "Parler au professeur Sig. Nificatif, dans la pièce de gauche",
+    "parler_ines_salle_droite": "Parler à Inès dans la salle de droite",
+    "reveler_quatre_series_cartes_terminal_bas_droite": "Révéler les quatre séries de cartes au terminal, en bas à droite",
+    "utiliser_simulateur_s_04_haut_gauche": "Utiliser le simulateur S-04 en haut à gauche",
+    "rediger_deux_rapports_table_bas_gauche": "Rédiger les deux rapports sur la table, en bas à gauche",
+    "chapitre_4_termine_deux_rapports_sont_valides": "Chapitre 4 terminé — les deux rapports sont validés",
+    "chapitre_4_termine_rapports_valides": "Chapitre 4 terminé — rapports validés"
+  },
+  "notifications": {
+    "approchez_vous_element_interactif": "Approchez-vous d’un élément interactif"
+  },
+  "decor": {
+    "bureau_archives": "BUREAU / ARCHIVES",
+    "rapport": "RAPPORT ↓",
+    "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
+    "bureau_dossiers": "BUREAU DES DOSSIERS",
+    "simulateur": "SIMULATEUR ↑",
+    "cartes": "CARTES ↑",
+    "terminal": "TERMINAL ↓"
+  }
+}

@@ -1,0 +1,63 @@
+button, a { touch-action: manipulation; }
+
+.toolbar a.btn { text-decoration: none; }
+html.dialog-open { overflow: hidden; }
+
+:where(button, a):focus-visible {
+  outline: 2px solid #f6da93;
+  outline-offset: 2px;
+}
+
+.overlay:not(.hidden) {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  justify-items: center;
+  overflow: hidden;
+}
+
+.dialog-objective {
+  max-width: 100%;
+  margin: 0 0 8px;
+  padding: 5px 10px;
+  background: #1d2c2d;
+  color: #ecf2e8;
+  border: 1px solid #587a71;
+  font-size: 13px;
+  text-align: center;
+}
+
+.overlay:not(.hidden) .modal {
+  max-height: 100%;
+  overscroll-behavior: contain;
+}
+
+.modal h2:focus { outline: none; }
+.overlay:not(.hidden) .modal button { min-height: 36px; }
+.series-tabs button { font-size: 12px; }
+.series-tabs button.current { background: #70512c; }
+
+.card.good::after, .card.bad::after {
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  font: 800 13px/1 system-ui, sans-serif;
+}
+.card.good::after { content: "✓"; color: #134f39; }
+.card.bad::after { content: "×"; color: #742d1e; }
+
+@media (max-width: 650px) {
+  .hud { gap: 4px; font-size: 13px; }
+  .overlay:not(.hidden) .modal p { font-size: 14px; }
+  .overlay:not(.hidden) .modal .btn { font-size: 14px; }
+  .scene-hotspot span { font-size: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card.flip-in { animation: none; }
+}
+
+/* La hauteur minimale mobile conserve les cibles tactiles sans élargir le plan. */
+.game { width: 100%; }
+.game canvas { touch-action: pan-y pinch-zoom; }
+
+.toast { pointer-events: none; }

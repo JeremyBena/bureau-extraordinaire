@@ -1,0 +1,348 @@
+{
+  "interface": {
+    "titre_onglet": "Le Bureau de l'extraordinaire — Chapitre 2 · Cinq sur cinq",
+    "sous_titre": "Chapitre 02 · Cinq sur cinq",
+    "note": "Ce prototype fonctionne localement, sans collecte de données. La réussite initiale de cinq prédictions est <b>scénarisée</b> pour l'apprentissage ; toutes les parties virtuelles du simulateur reposent sur de véritables tirages aléatoires indépendants.",
+    "indice_scene": "Cliquez pour interagir",
+    "commandes": {
+      "aide": "? Aide",
+      "chapitre_precedent": "← Chapitre 1"
+    }
+  },
+  "dialogues": {
+    "mission_elias": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Vous vous souvenez de Camille ? Camille avait réussi <b>une seule prédiction</b> : quand tout est dû au hasard, cela arrive <b>environ une fois sur cinq</b>. Il est donc fréquent que quelqu’un réussisse un seul tirage sans aucun pouvoir. Notre nouveau candidat, Elias, affirme pouvoir réussir <b>cinq prédictions de suite</b>. Elles seront toutes notées avant le premier tirage.",
+      "actions": {
+        "voir_elias_salle_experimentation": {
+          "libelle": "Voir Elias dans la salle d’expérimentation →"
+        }
+      }
+    },
+    "invitation_au_simulateur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Cinq réussites d’affilée, c’est impressionnant. Mais avant de vous prononcer, je vous suggère de tester une idée : <b>des personnes sans pouvoirs pourraient-elles également réussir les cinq prédictions ?</b> Le simulateur, dans le bureau à gauche, peut nous aider.",
+      "actions": {
+        "examiner_simulateur": {
+          "libelle": "Examiner le simulateur →"
+        }
+      }
+    },
+    "comparaison_simulateur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Le simulateur compare une seule bonne prédiction à cinq prédictions correctes de suite. Essayez de faire fonctionner la machine à plusieurs reprises. Vous pourrez ensuite rédiger votre rapport."
+    },
+    "invitation_au_rapport": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Votre rapport est prêt. Allez <b>dans la pièce de gauche</b> : c’est la <b>grande feuille claire sur la table du bas</b>."
+    },
+    "invitation_au_terminal": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Allez observer la prédiction d’Elias. La machine d’expérimentation est au fond à droite."
+    },
+    "attente_elias": {
+      "personnage": "Elias",
+      "texte": "Je vous attends. J’aimerais vous montrer mon talent, mais le professeur doit d’abord vous remettre votre dossier."
+    },
+    "protocole_elias": {
+      "personnage": "Elias",
+      "texte": "Je connais les cinq symboles. Ils sont <b>équiprobables</b> : cela veut dire que chacun a <b>autant de chances que les autres</b> de sortir, soit une chance sur cinq. Je vais enregistrer mes cinq prédictions <b>avant</b> que la machine n’en tire une seule. Je ne pourrai plus les changer ensuite. On essaye ?",
+      "actions": {
+        "allons_je_vais_terminal": {
+          "libelle": "Allons-y. Je vais au terminal →"
+        }
+      }
+    },
+    "commentaire_elias": {
+      "personnage": "Elias",
+      "texte": {
+        "avant_tirages": "Je suis prêt. Les prédictions sont enregistrées : vous pouvez lancer les tirages.",
+        "apres_tirages": "Cinq sur cinq ! Je n’ai pas changé une seule prédiction. Difficile de faire mieux, non ?"
+      }
+    },
+    "terminal_verrouille": {
+      "personnage": "Terminal d’expérience",
+      "texte": "Avant de lancer les tirages, parlez à Elias."
+    },
+    "comparaison_monde_sans_pouvoir": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Nous allons examiner cette question. Plutôt que de deviner, reproduisons la même expérience dans un monde où <b>toutes les prédictions et les cartes sont tirées au hasard</b>. Le simulateur, à gauche, peut fabriquer des parties où tout est décidé au hasard, pour nous aider à comparer.",
+      "actions": {
+        "aller_simulateur": {
+          "libelle": "Aller au simulateur →"
+        }
+      }
+    },
+    "tirages_archives": {
+      "personnage": "Terminal d’expérience",
+      "texte": "Les prédictions d’Elias sont toutes correctes. Les résultats sont consignés dans le dossier nº 002."
+    },
+    "simulateur_verrouille": {
+      "personnage": "Simulateur S-02",
+      "texte": "Le programme de simulation sera accessible après l’expérience d’Elias."
+    },
+    "explication_rarete": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Exactement. Avec cinq cartes indépendantes, chaque prédiction correcte a une chance sur cinq de se produire sans pouvoir. Une réussite parfaite est donc possible, mais très rare : <b>une chance sur 3 125</b>. Ce résultat reste possible même sans aucun pouvoir. Vous pouvez maintenant déposer votre rapport. Il se trouve <b>dans la pièce de gauche, sur la grande feuille claire posée sur le bureau, en bas de la salle</b>.",
+      "actions": {
+        "rediger_rapport": {
+          "libelle": "Rédiger le rapport →"
+        }
+      }
+    },
+    "rapport_indisponible": {
+      "personnage": "Archives du Bureau",
+      "texte": "Pas encore de rapport à déposer. Terminez d’abord vos simulations."
+    }
+  },
+  "questions": {
+    "intuition_cinq_reussites": {
+      "titre": "UNE RÉUSSITE ÉTONNANTE ?",
+      "texte": "<div class=\"person\">Professeur Sig. Nificatif</div><p>Une personne sans pouvoirs aurait-elle pu obtenir <b>cinq bonnes réponses de suite</b> ?</p><p>Avant d’aller voir la machine, quelle est votre intuition ?</p>",
+      "reponses": {
+        "presque_impossible": {
+          "libelle": "Ce serait presque impossible."
+        },
+        "aussi_facile_qu_une_carte": {
+          "libelle": "Ce serait aussi facile qu’une seule bonne prédiction."
+        },
+        "ne_sait_pas": {
+          "libelle": "Je ne sais pas."
+        }
+      }
+    },
+    "absence_de_reussite_parfaite": {
+      "titre": "ET SI LE SIMULATEUR NE TROUVE AUCUN 5 SUR 5 ?",
+      "texte": "<div class=\"person\">Professeur Sig. Nificatif</div><p>Imaginez que nous simulions 1 000 parties de cinq cartes, sans jamais observer une réussite parfaite.</p><p><b>Que pouvons-nous en conclure ?</b></p>{{feedback}}",
+      "reponses": {
+        "reussite_impossible": {
+          "libelle": "Une réussite parfaite est impossible sans pouvoirs.",
+          "feedback": "Non. Une série rare peut ne jamais apparaître parmi 1 000 essais, tout en restant possible."
+        },
+        "rarete_compatible": {
+          "libelle": "Nous n’en avons pas observé : cela peut arriver quand c’est très rare.",
+          "feedback": "Zéro réussite observée sur 1 000 parties ne signifie pas que sa probabilité est nulle."
+        },
+        "preuve_pouvoir": {
+          "libelle": "Cela prouve que notre candidat possède un pouvoir.",
+          "feedback": "Non : l’absence de réussite parfaite dans une série de simulations ne démontre pas l’existence d’un pouvoir chez Elias."
+        }
+      },
+      "actions": {
+        "revenir_simulations": {
+          "libelle": "Revenir aux simulations"
+        }
+      }
+    },
+    "rapport_elias": {
+      "titre": "RAPPORT D’ENQUÊTE — DOSSIER 002",
+      "texte": [
+        "<p class=\"person\">Sujet : Elias · Cinq prédictions correctes sur cinq</p>",
+        "<p>Dans cette expérience, les cinq tirages sont indépendants et tous les symboles sont équiprobables. Les prédictions avaient été enregistrées avant les tirages.</p>",
+        "<p><b>En quoi cette observation diffère-t-elle de la réussite d’une seule prédiction ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "serie_plus_rare": {
+          "libelle": "Elle est beaucoup plus rare chez quelqu’un sans pouvoir, sans démontrer pour autant l’existence d’un pouvoir.",
+          "feedback": "Une carte correcte survient environ une fois sur cinq sans pouvoir ; cinq cartes correctes d’affilée, environ une fois sur 3 125."
+        },
+        "preuve_pouvoir": {
+          "libelle": "Elle prouve que le candidat possède un pouvoir.",
+          "feedback": "Une observation très rare en l’absence de pouvoirs ne prouve pas à elle seule que des pouvoirs existent."
+        },
+        "meme_frequence": {
+          "libelle": "Elle ne change rien : une réussite reste une réussite.",
+          "feedback": "Une réussite sur une carte et cinq réussites sur cinq n’ont pas la même fréquence lorsque les réponses sont dues au hasard."
+        },
+        "simulateur_defectueux": {
+          "libelle": "Elle prouve que le simulateur fonctionne mal.",
+          "feedback": "Le simulateur suit exactement les règles connues des tirages. Des événements très rares peuvent se produire sans que le dispositif soit défectueux."
+        }
+      },
+      "actions": {
+        "revoir_simulateur": {
+          "libelle": "Revoir le simulateur"
+        }
+      }
+    }
+  },
+  "ecrans": {
+    "dossier_elias": {
+      "titre": "DOSSIER Nº 002 — CINQ SUR CINQ",
+      "texte": [
+        "<div class=\"introart\" aria-hidden=\"true\">✦</div><p>De retour au <b>Bureau de l'extraordinaire</b>, vous recevez un dossier plus difficile.</p>",
+        "<p>Une personne affirme pouvoir prévoir <b>une série de cinq cartes</b> avant même qu'elles soient générées.</p>",
+        "<p class=\"tiny\">Cliquez directement sur les personnages et les appareils. Le bureau des rapports est marqué en bas à gauche.</p>"
+      ],
+      "actions": {
+        "prendre_dossier": {
+          "libelle": "Prendre le dossier →"
+        }
+      }
+    },
+    "panneau_zener": {
+      "titre": "LES CARTES DE ZENER",
+      "texte": "<p>Le tirage comporte cinq symboles possibles : cercle, croix, vagues, carré ou étoile.</p>{{cartes}}<div class=\"note\">Pour chaque carte, l’ordinateur choisit l’un de ces symboles au hasard. Ils sont <b>équiprobables</b> : chacun a une chance sur cinq de sortir. Les tirages sont aussi <b>indépendants</b> : le symbole sorti avant ne change pas les chances du suivant. Les cinq choix d’Elias seront enregistrés avant le début de l’expérience.</div>",
+      "actions": {
+        "compris": {
+          "libelle": "Compris"
+        }
+      }
+    },
+    "tirages_elias": {
+      "titre": {
+        "apres_tirages": "RÉSULTAT — CINQ SUR CINQ",
+        "avant_tirages": "EXPÉRIENCE — CINQ PRÉDICTIONS"
+      },
+      "variantes": {
+        "texte_pluriel": {
+          "avant_tirages": "À vous de lancer le premier tirage.",
+          "tirages_en_cours": "{{cartes_revelees}} prédiction{{pluriel}} correcte{{pluriel_2}} sur {{cartes_revelees_2}}"
+        },
+        "texte_resultat_final": {
+          "apres_tirages": "<p style=\"text-align:center\" class=\"success\">Toutes les cartes correspondent !</p>"
+        }
+      },
+      "texte": [
+        "<p class=\"tiny\">Les cinq prédictions ont été enregistrées <b>avant</b> les tirages. Pour chaque carte, le tirage est indépendant et les cinq symboles sont équiprobables : <b>chacun a exactement une chance sur cinq de sortir</b>. Aucun symbole n’est favorisé.</p>",
+        "<div class=\"small-label\">Les prédictions d’Elias</div>{{predictions}}<div class=\"small-label\">Cartes générées par le terminal</div>{{cartes_tirees}}<p class=\"emph\" style=\"text-align:center\">{{pluriel}}</p>{{resultat_final}}"
+      ],
+      "actions": {
+        "conclure_cette_performance": {
+          "libelle": "Que conclure de cette performance ? →"
+        },
+        "reveler_tirage_5": {
+          "libelle": "Révéler le tirage {{numero_tirage}} sur 5 →"
+        },
+        "revenir_salle": {
+          "libelle": "Revenir à la salle"
+        }
+      }
+    },
+    "mode_emploi_simulateur": {
+      "titre": "SIMULATEUR S-02 — MODE D’EMPLOI",
+      "texte": [
+        "<p>La machine va fabriquer des <b>parties virtuelles</b> : ce sont simplement des expériences réalisées par un programme, sans personne pour jouer.</p>",
+        "<div class=\"note\">À chaque partie, l’ordinateur tire <b>cinq prédictions au hasard</b> et, séparément, <b>cinq cartes à découvrir</b>. Il compte les correspondances : le résultat dépend uniquement du hasard.</div><p>Il n’y a <b>aucune personne réelle ou virtuelle qui devine</b>. Ce sont seulement deux séries de cartes générées indépendamment par l’ordinateur.</p>",
+        "<p>Nous pourrons compter les parties où <b>la première carte</b> correspond, puis celles où <b>les cinq cartes</b> correspondent.</p>"
+      ],
+      "actions": {
+        "lancer_parties_virtuelles": {
+          "libelle": "Lancer les parties virtuelles →"
+        }
+      }
+    },
+    "simulateur": {
+      "titre": "SIMULATEUR — PARTIES DUES AU HASARD",
+      "variantes": {
+        "texte_avertissement": {
+          "oui": "<p class=\"tiny warning\">Aucune réussite parfaite observée pour l’instant. Cela ne veut pas dire qu’elle est impossible.</p>"
+        },
+        "texte_indication_progression": {
+          "simulation_suffisante": "Le dossier peut maintenant être rédigé. Vous pouvez aussi continuer vos expériences.",
+          "simulation_insuffisante": "Pour poursuivre l’enquête, observez au moins 1 000 parties virtuelles."
+        },
+        "recherche_reussite_oui_issue_recherche": {
+          "reussite": "observer une réussite parfaite",
+          "limite": "arriver à la limite de recherche sans réussite parfaite"
+        }
+      },
+      "texte": [
+        "<p class=\"tiny\">Une partie virtuelle = deux séries indépendantes de cinq cartes générées au hasard. Nous comptons les correspondances, sans faire intervenir de personne.</p>{{derniere_partie}}<div class=\"stats\"><div class=\"stat\"><b>{{parties}}</b><span>parties virtuelles</span></div><div class=\"stat\"><b>{{premieres_cartes_correctes}}</b><span>1re carte correcte</span></div><div class=\"stat\"><b>{{parties_parfaites}}</b><span>5 cartes correctes</span></div></div><div class=\"compare\"><div class=\"barline\"><span>1re carte juste</span><div class=\"bartrack\"><div class=\"barfill\" style=\"width:{{largeur_premiere_carte}}%\"></div></div><b>{{frequence_premiere_carte}} %</b></div><div class=\"barline\"><span>5 sur 5</span><div class=\"bartrack\"><div class=\"barfill rare\" style=\"width:{{largeur_reussites_parfaites}}%\"></div></div><b>{{frequence_reussites_parfaites}} %</b></div></div>{{avertissement}}{{recherche_reussite}}{{message}}<div class=\"line\"></div><p class=\"tiny\">Lancez davantage de parties pour mieux distinguer un événement fréquent d’un événement rare.</p>",
+        "<p class=\"tiny\">{{indication_progression}}</p>"
+      ],
+      "actions": {
+        "1_partie": {
+          "libelle": "+1 partie"
+        },
+        "20_parties": {
+          "libelle": "+20 parties"
+        },
+        "200_parties": {
+          "libelle": "+200 parties"
+        },
+        "2_000_parties": {
+          "libelle": "+2 000 parties"
+        },
+        "10_000_parties": {
+          "libelle": "+10 000 parties"
+        },
+        "chercher_reussite_parfaite_hasard": {
+          "libelle": "Chercher une réussite parfaite (au hasard)"
+        },
+        "j_ai_compris_comparaison": {
+          "libelle": "J’ai compris la comparaison →"
+        },
+        "quitter_simulateur": {
+          "libelle": "Quitter le simulateur"
+        }
+      },
+      "recherche_reussite": {
+        "oui": "<p class=\"tiny\">Recherche supplémentaire : {{parties_examinees}} partie{{pluriel}} nécessaire{{pluriel_2}} pour {{issue_recherche}}.</p>"
+      },
+      "derniere_partie": {
+        "oui": "<div class=\"small-label\">Dernière partie virtuelle — première série aléatoire</div>{{predictions}}<div class=\"small-label\">Deuxième série aléatoire</div>{{cartes_tirees}}<p class=\"tiny\" style=\"text-align:center\">{{reussites}} bonne{{pluriel}} réponse{{pluriel_2}} sur 5. Bordure verte = correspondance.</p>",
+        "non": "<div class=\"note\">Lancez une partie pour voir apparaître les prédictions fabriquées au hasard par le programme et les cartes à deviner.</div>"
+      }
+    },
+    "fin_chapitre": {
+      "titre": "CHAPITRE 2 TERMINÉ",
+      "texte": [
+        "<p class=\"person\">Rapport validé · Dossier nº 002</p>",
+        "<p><b>Professeur Sig. Nificatif :</b> « Une bonne réponse isolée apparaît souvent au hasard (environ une fois sur cinq). Cinq bonnes réponses d’affilée sont bien plus rares (environ une fois sur 3 125). »</p>",
+        "<p>« Nous ne savons toujours pas si Elias possède des pouvoirs. En revanche, nous savons qu’une telle performance serait <b>très rare chez une personne qui n’en possède pas</b>. »</p>",
+        "<div class=\"note\"><b>Ce que vous avez découvert :</b> pour comprendre à quel point une observation est surprenante, il faut examiner ce qui pourrait se produire <b>en l’absence du phénomène</b>. Une observation très rare dans ces conditions mérite davantage d’attention, mais n’établit pas à elle seule l’existence du phénomène.</div><p class=\"tiny\">Un détail important : les cinq choix ont été faits avant les tirages et les tirages sont indépendants. Sans cela, la comparaison ne serait pas valable.</p>",
+        "<p><b>Prochain dossier :</b> « Une performance imparfaite ». Si une personne réussit 8 cartes sur 20, que faudrait-il compter pour savoir si son résultat est étonnant ?</p>",
+        "<p class=\"tiny\">À suivre : les performances aussi bonnes ou meilleures que celle observée, puis la règle de décision du Bureau.</p>"
+      ],
+      "actions": {
+        "continuer_chapitre_3": {
+          "libelle": "Continuer : chapitre 3 →"
+        },
+        "retourner_laboratoire": {
+          "libelle": "Retourner dans le laboratoire"
+        },
+        "recommencer_chapitre": {
+          "libelle": "Recommencer le chapitre"
+        }
+      }
+    },
+    "aide": {
+      "titre": "AIDE — COMMENT JOUER",
+      "texte": [
+        "<p><b>Exploration :</b> cliquez directement sur les personnes et appareils de la scène, à la souris ou au toucher.</p>",
+        "<p><b>Interaction :</b> cliquez sur l’élément souhaité. Aucun déplacement au clavier n’est nécessaire.</p>",
+        "<p><b>But :</b> découvrir pourquoi cinq prédictions correctes sont plus surprenantes qu’une seule, en comparant avec ce que produirait le hasard seul.</p>",
+        "<div class=\"note\"><b>Personne fictive / partie virtuelle :</b> c’est une série de cinq prédictions et de cinq tirages générés par le programme. Aucune vraie personne n’intervient. Il n’y a aucun pouvoir.</div>"
+      ],
+      "actions": {
+        "reprendre": {
+          "libelle": "Reprendre"
+        }
+      }
+    }
+  },
+  "objectifs": {
+    "parler_professeur_sig_nificatif_bureau": "Parler au professeur Sig. Nificatif dans le bureau",
+    "rencontrer_elias_salle_experimentation": "Rencontrer Elias dans la salle d’expérimentation",
+    "explorer_simulateur_s_02_gauche": "Explorer le simulateur S-02, à gauche",
+    "lancer_cinq_tirages_terminal_droite": "Lancer les cinq tirages au terminal, à droite",
+    "rejoindre_simulateur_s_02_gauche": "Rejoindre le simulateur S-02, à gauche",
+    "simuler_parties_sans_pouvoirs_puis_comparer_resultats": "Simuler des parties sans pouvoirs, puis comparer les résultats",
+    "rapport_piece_gauche_grande_feuille_claire_bas": "Rapport : pièce de gauche, grande feuille claire en bas",
+    "chapitre_2_termine_rapport_valide": "Chapitre 2 terminé — rapport validé"
+  },
+  "notifications": {
+    "nouveau_dossier_ouvert": "Nouveau dossier ouvert",
+    "approchez_vous_element_interactif": "Approchez-vous d’un élément interactif"
+  },
+  "decor": {
+    "bureau_archives": "BUREAU / ARCHIVES",
+    "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
+    "rapport": "RAPPORT ↓",
+    "bureau_dossiers": "BUREAU DES DOSSIERS",
+    "simulateur": "SIMULATEUR ↑",
+    "cartes": "CARTES ↑",
+    "terminal": "TERMINAL ↓"
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "interface": {
+    "titre_onglet": "Le Bureau de l'extraordinaire — Chapitre 1",
+    "sous_titre": "Chapitre 01 · Une prédiction extraordinaire ?",
+    "note": "Prototype autonome : les simulations se déroulent dans votre navigateur, sans transmission de données. Le premier tirage est scénarisé pour l'apprentissage ; les tirages du simulateur sont aléatoires et indépendants.",
+    "indice_scene": "Cliquez sur un élément pour interagir",
+    "commandes": {
+      "aide": "? Commandes"
+    }
+  },
+  "dialogues": {
+    "accueil_recrue": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Ah, notre nouvelle recrue ! Bienvenue. Nous enquêtons sur des personnes qui prétendent posséder des capacités extraordinaires.",
+      "actions": {
+        "je_vous_ecoute": {
+          "libelle": "Je vous écoute."
+        }
+      }
+    },
+    "mission_du_bureau": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Télépathie, précognition, télékinésie... Nous avons de quoi nous occuper. Votre premier rendez-vous est arrivé.",
+      "actions": {
+        "qui_ce": {
+          "libelle": "Qui est-ce ?"
+        }
+      }
+    },
+    "presentation_camille": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Camille affirme pouvoir prédire la carte qui apparaîtra sur notre écran. Elle attend dans la salle d’expérimentation, à droite.",
+      "actions": {
+        "aller_rencontrer": {
+          "libelle": "Aller la rencontrer →"
+        }
+      }
+    },
+    "salutation_camille": {
+      "personnage": "Camille",
+      "texte": "Bonjour ! On m’a dit que vous étiez la nouvelle recrue."
+    },
+    "affirmation_camille": {
+      "personnage": "Camille",
+      "texte": "Bonjour ! Il m’arrive de connaître des événements avant qu’ils ne se produisent. Parfois, je sais quelle carte va apparaître.",
+      "actions": {
+        "comment_cela_fonctionne_t_il": {
+          "libelle": "Comment cela fonctionne-t-il ?"
+        }
+      }
+    },
+    "protocole_camille": {
+      "personnage": "Camille",
+      "texte": "Je choisis l’un des cinq symboles, puis l’ordinateur génère une carte au hasard. Vous n’avez qu’à regarder.",
+      "actions": {
+        "voir_experience": {
+          "libelle": "Voir l’expérience"
+        }
+      }
+    },
+    "invitation_au_terminal": {
+      "personnage": "Camille",
+      "texte": "J’ai un bon pressentiment. Vous pouvez lancer l’expérience avec le terminal."
+    },
+    "reaction_camille": {
+      "personnage": "Camille",
+      "texte": "Vous avez vu ? J’avais prédit l’étoile ! Alors, convaincu ?"
+    },
+    "au_revoir_camille": {
+      "personnage": "Camille",
+      "texte": "Merci pour l’enquête ! À une prochaine fois, peut-être."
+    },
+    "terminal_verrouille": {
+      "personnage": "Terminal",
+      "texte": "Le candidat doit d’abord recevoir les instructions. Parlez à Camille."
+    },
+    "tirage_archive": {
+      "personnage": "Terminal",
+      "texte": "Le tirage du premier dossier a été archivé."
+    },
+    "invitation_au_laboratoire": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "{{message}} Venez. J’ai quelque chose à vous montrer dans le laboratoire de simulation.",
+      "actions": {
+        "acceder_laboratoire": {
+          "libelle": "Accéder au laboratoire →"
+        }
+      }
+    },
+    "presentation_simulateur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Cette machine ne fait intervenir aucune vraie personne. Elle <b>invente des parties virtuelles</b> : à chaque partie, le programme choisit une prédiction au hasard, puis tire une carte au hasard. Nous savons donc qu’aucun pouvoir ne peut intervenir.",
+      "actions": {
+        "tester_simulateur": {
+          "libelle": "Tester le simulateur →"
+        }
+      }
+    },
+    "bilan_simulation": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "{{message}} Retournez dans mon bureau, nous allons rédiger votre premier rapport.",
+      "actions": {
+        "aller_bureau": {
+          "libelle": "Aller au bureau →"
+        }
+      }
+    },
+    "rapport_indisponible": {
+      "personnage": "Dossiers",
+      "texte": "Votre premier rapport n’est pas encore prêt."
+    },
+    "conseil_professeur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": {
+        "orientation_experience": "Commencez par l’expérience avec Camille.",
+        "orientation_suite": {
+          "orientation_simulateur": "Le simulateur vous attend en haut à gauche.",
+          "orientation_finale": {
+            "orientation_rapport": "Le dossier est posé sur mon bureau.",
+            "bilan": "Bon travail, recrue."
+          }
+        }
+      }
+    }
+  },
+  "questions": {
+    "premiere_impression": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Intéressant. Camille a prédit correctement la carte. Alors, qu’en pensez-vous ?",
+      "reponses": {
+        "pouvoir_probable": {
+          "libelle": "Camille possède probablement un pouvoir.",
+          "feedback": "C’est une possibilité. Mais qu’est-ce qui vous fait penser cela ?"
+        },
+        "coup_de_chance": {
+          "libelle": "Une réussite peut aussi être un coup de chance.",
+          "feedback": "Vous êtes sceptique. Très bien. Mais sur quoi repose votre scepticisme ?"
+        },
+        "sans_opinion": {
+          "libelle": "Je ne sais pas encore quoi en penser.",
+          "feedback": "Nous manquons peut-être d’un élément pour nous prononcer."
+        }
+      }
+    },
+    "possibilite_de_reussir_sans_pouvoir": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "{{feedback_premiere_impression}} Supposez maintenant que Camille ne possède aucun pouvoir particulier. Aurait-elle tout de même pu réussir ?",
+      "reponses": {
+        "reussite_possible": {
+          "libelle": "Oui, c’est possible.",
+          "feedback": "Oui, c’est possible. L’étoile pouvait apparaître même si la prédiction était faite au hasard."
+        },
+        "reussite_impossible": {
+          "libelle": "Non, ce serait impossible.",
+          "feedback": "Pourtant, l’ordinateur pouvait parfaitement générer une étoile, même si Camille avait choisi au hasard."
+        },
+        "ne_sait_pas": {
+          "libelle": "Je ne sais pas.",
+          "feedback": "Nous pourrions essayer de le découvrir."
+        }
+      }
+    },
+    "interpretation_simulation": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Nous avons généré uniquement des prédictions et des tirages au hasard. Pourtant, certaines parties donnent une réponse correcte. Qu’est-ce que cela nous apprend sur Camille ?",
+      "reponses": {
+        "succes_compatible": {
+          "libelle": "Une bonne prédiction arrive assez souvent lorsque tout est dû au hasard.",
+          "feedback": "L’ordinateur obtient parfois une bonne réponse par le seul hasard.",
+          "feedback_dialogue": "En effet. Une réussite est compatible avec l’absence de pouvoirs."
+        },
+        "absence_pouvoir_prouvee": {
+          "libelle": "Cela démontre que Camille n’a aucun pouvoir.",
+          "feedback": "Attention. Nous n’avons pas démontré que Camille est dépourvue de pouvoirs."
+        },
+        "observation_seule": {
+          "libelle": "Cela ne change rien : Camille a réussi sa prédiction.",
+          "feedback": "Camille a bien réussi. Mais nous venons de voir que le hasard peut produire exactement la même réussite."
+        }
+      }
+    },
+    "rapport_camille": {
+      "titre": "RAPPORT — DOSSIER Nº 001",
+      "texte": [
+        "<p class=\"reportlabel\">Enquête : Camille · Précognition</p>",
+        "<p>La personne a prédit correctement une carte parmi cinq symboles équiprobables.</p>",
+        "<p>Vous avez également créé des parties où les prédictions et les cartes sont choisies au hasard. Certaines ont donné une réponse correcte.</p>",
+        "<p><b>Pourquoi la réussite de Camille ne constitue-t-elle pas, à elle seule, une observation particulièrement surprenante ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "succes_possible_sans_pouvoir": {
+          "libelle": "Parce qu’une personne sans pouvoir peut réussir cette prédiction.",
+          "feedback": "Dans des tirages équitables, près de 20 % des parties réussissent par hasard : une seule réussite est donc peu surprenante."
+        },
+        "soupcon_triche": {
+          "libelle": "Parce que Camille a probablement triché.",
+          "feedback": "Nous n’avons aucune raison de suspecter une tricherie. Le protocole en contrôle la possibilité."
+        },
+        "preuve_absence_pouvoir": {
+          "libelle": "Parce que nous avons démontré que Camille n’a aucun pouvoir.",
+          "feedback": "Nous ne connaissons pas les capacités réelles de Camille. Nous savons seulement que le résultat est compatible avec l’absence de pouvoirs."
+        },
+        "inexistence_paranormal": {
+          "libelle": "Parce que les phénomènes paranormaux n’existent pas.",
+          "feedback": "Notre enquête ne permet pas de conclure quoi que ce soit sur tous les phénomènes paranormaux."
+        }
+      },
+      "actions": {
+        "revoir_simulateur": {
+          "libelle": "Revoir le simulateur"
+        }
+      }
+    }
+  },
+  "ecrans": {
+    "bienvenue": {
+      "titre": "BIENVENUE, RECRUE",
+      "texte": [
+        "<div class=\"introart\" aria-hidden=\"true\">✧</div><p>Vous venez de rejoindre le <b>Bureau de l'extraordinaire</b>, une institution spécialisée dans l'étude des phénomènes inexpliqués.</p>",
+        "<p>Votre première mission : examiner une personne affirmant pouvoir <b>prédire l'avenir</b>.</p>",
+        "<p class=\"tiny\">Cliquez directement sur un personnage ou un appareil pour interagir. Le <b>bureau des rapports</b> se trouve en bas à gauche, signalé par une grande feuille.</p>"
+      ],
+      "actions": {
+        "entrer_bureau": {
+          "libelle": "Entrer au Bureau →"
+        }
+      }
+    },
+    "panneau_zener": {
+      "titre": "LES CARTES DE ZENER",
+      "texte": [
+        "<p>Le dispositif comporte <b>cinq symboles</b>.</p>",
+        "<div class=\"cards\">{{cartes}}</div><p>À chaque tirage, l’ordinateur génère un symbole au hasard. Les cinq symboles ont <b>la même chance</b> d’apparaître.</p>",
+        "<p>La prédiction doit être enregistrée <b>avant</b> la génération de la carte.</p>"
+      ],
+      "actions": {
+        "j_ai_compris": {
+          "libelle": "J’ai compris"
+        }
+      }
+    },
+    "prediction_camille": {
+      "titre": "EXPÉRIENCE DE PRÉCOGNITION",
+      "texte": [
+        "<div class=\"person\">Camille</div><p>« Je crois que je sais... Ce sera une <b>étoile</b>. »</p>",
+        "<p class=\"tiny\">PRÉDICTION ENREGISTRÉE AVANT TIRAGE</p>",
+        "<div class=\"cards\">{{etoile}}</div><p>Le générateur de cartes est prêt.</p>"
+      ],
+      "actions": {
+        "generer_carte": {
+          "libelle": "Générer la carte →"
+        }
+      }
+    },
+    "resultat_tirage": {
+      "titre": "RÉSULTAT DU TIRAGE",
+      "texte": [
+        "<div class=\"pair\"><div><div class=\"caption\">PRÉDICTION</div>{{etoile}}</div><div><div class=\"caption\">CARTE GÉNÉRÉE</div>{{etoile_2}}</div></div><p style=\"text-align:center;color:#79d9b1;font-weight:700\">✓ PRÉDICTION CORRECTE</p>",
+        "<p class=\"person\">Camille</p>",
+        "<p>« Ah ! Vous avez vu ? Je vous l’avais dit ! »</p>"
+      ],
+      "actions": {
+        "ecouter_professeur_sig_nificatif": {
+          "libelle": "Écouter le professeur Sig. Nificatif →"
+        }
+      }
+    },
+    "relecture_tirage": {
+      "titre": "ENREGISTREMENT DU TIRAGE",
+      "texte": "<div class=\"pair\"><div>{{etoile}}</div><div>{{etoile_2}}</div></div><p>Camille a correctement prédit l'étoile lors de sa première tentative.</p>",
+      "actions": {
+        "fermer": {
+          "libelle": "Fermer"
+        }
+      }
+    },
+    "simulateur_verrouille": {
+      "titre": "SIMULATEUR S-01",
+      "texte": "<p class=\"tiny\">ACCÈS RESTREINT</p><p>Cette salle ne sera accessible qu’après la première expérience.</p>",
+      "actions": {
+        "fermer": {
+          "libelle": "Fermer"
+        }
+      }
+    },
+    "simulateur": {
+      "titre": "SIMULATEUR S-01",
+      "variantes": {
+        "texte_derniere_partie_oui_resultat": {
+          "reussite": "✓ Réussite",
+          "echec": "✗ Échec"
+        },
+        "texte_derniere_partie": {
+          "oui": "<div class=\"pair\"><div><div class=\"caption\">DERNIÈRE PRÉDICTION</div>{{prediction}}</div><div><div class=\"caption\">CARTE GÉNÉRÉE</div>{{carte_tiree}}</div></div><p style=\"text-align:center;color:{{couleur}}\">{{resultat}}</p>"
+        }
+      },
+      "texte": [
+        "<p class=\"tiny\">MONDE DE RÉFÉRENCE : AUCUNE PRÉCOGNITION</p>",
+        "<p class=\"sub\">Une <b>partie virtuelle</b> est un essai fabriqué par l’ordinateur : il choisit une prédiction au hasard, puis tire une carte indépendamment. <b>Personne ne joue</b> : seules les règles du hasard produisent le résultat.</p>{{derniere_partie}}<div class=\"stats\"><div class=\"stat\">Parties virtuelles<b>{{parties}}</b></div><div class=\"stat\">Réussites<b>{{reussites}}</b></div><div class=\"stat\">Fréquence<b>{{frequence}}{{unite}}</b></div></div><div class=\"bars\"><div class=\"barwrap\"><div class=\"bar good\" style=\"height:{{hauteur_reussites}}px\"></div>Réussites</div><div class=\"barwrap\"><div class=\"bar\" style=\"height:{{hauteur_echecs}}px\"></div>Échecs</div></div><p class=\"tiny\">{{commentaire}}</p>"
+      ],
+      "actions": {
+        "creer_1_partie": {
+          "libelle": "Créer 1 partie"
+        },
+        "creer_10_parties": {
+          "libelle": "Créer 10 parties"
+        },
+        "creer_100_parties": {
+          "libelle": "Créer 100 parties"
+        },
+        "nous_apprend_ce_resultat": {
+          "libelle": "Que nous apprend ce résultat ? →"
+        },
+        "creer_100_autres_parties": {
+          "libelle": "Créer 100 autres parties"
+        },
+        "revenir_laboratoire": {
+          "libelle": "Revenir au laboratoire"
+        }
+      },
+      "commentaires": {
+        "aucune_partie": "Le professeur Sig. Nificatif : « Commençons par une partie où tout est décidé au hasard. »",
+        "parties_generees": {
+          "premiere_partie": "Sig. : « Voici une expérience dans un monde sans pouvoirs. Essayez maintenant dix autres parties au hasard. »",
+          "plusieurs_parties": {
+            "onze_parties": "Sig. : « Certaines parties réussissent, d’autres non. Essayons-en davantage. »",
+            "cent_onze_parties": "Sig. : « Vous avez maintenant de nombreuses observations. Même quand tout est dû au hasard, certaines prédictions tombent juste. »"
+          }
+        }
+      }
+    },
+    "fin_chapitre": {
+      "titre": "CHAPITRE 1 TERMINÉ",
+      "texte": [
+        "<p class=\"person\">Rapport validé · Dossier nº 001</p>",
+        "<p><b>Professeur Sig. Nificatif :</b> « Très bien. Une observation peut nous impressionner au premier abord, puis paraître beaucoup moins étonnante quand nous voyons ce qui pourrait se produire en l’absence du phénomène étudié. »</p>",
+        "<p>« Certaines observations, en revanche, sont vraiment difficiles à expliquer ainsi… »</p>",
+        "<p>Il dépose sur votre bureau un nouveau dossier intitulé <b>« Cinq sur cinq »</b>.</p>",
+        "<div class=\"end\"><p style=\"color:#79d9b1\"><b>Ce que vous avez découvert :</b></p>",
+        "<p>Une prédiction correcte peut se produire même sans précognition. Pour apprécier ce résultat, il est utile d'explorer ce que l'on observerait si la personne ne possédait aucun pouvoir.</p>",
+        "<p class=\"tiny\">Le chapitre 2 est disponible : vous pourrez poursuivre avec une série de cinq prédictions.</p>",
+        "</div>"
+      ],
+      "actions": {
+        "continuer_chapitre_2_cinq_cinq": {
+          "libelle": "Continuer : chapitre 2 — Cinq sur cinq →"
+        },
+        "retourner_laboratoire": {
+          "libelle": "Retourner dans le laboratoire"
+        },
+        "recommencer_chapitre": {
+          "libelle": "Recommencer le chapitre"
+        }
+      }
+    },
+    "aide": {
+      "titre": "COMMANDES ET OBJECTIF",
+      "texte": [
+        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la grande feuille en bas à gauche.</p>",
+        "<p><b>Interaction :</b> cliquez sur l’élément souhaité. Aucun déplacement au clavier n’est nécessaire.</p>",
+        "<p><b>But :</b> observer une prédiction et comprendre ce qu’elle nous apprend en comparant avec des personnes sans capacités de précognition.</p>",
+        "<p class=\"tiny\">Le jeu ne collecte aucune donnée. Les simulations sont exécutées localement.</p>"
+      ],
+      "actions": {
+        "reprendre": {
+          "libelle": "Reprendre"
+        }
+      }
+    }
+  },
+  "objectifs": {
+    "parler_professeur_sig_nificatif_hall": "Parler au professeur Sig. Nificatif dans le hall",
+    "rejoindre_camille_salle_experimentation": "Rejoindre Camille dans la salle d’expérimentation",
+    "examiner_panneau_puis_utiliser_terminal_tirage": "Examiner le panneau puis utiliser le terminal de tirage",
+    "rejoindre_laboratoire_simulation": "Rejoindre le laboratoire de simulation",
+    "explorer_parties_ou_tout_hasard": "Explorer des parties où tout est dû au hasard",
+    "rejoindre_bureau_pour_rediger_rapport": "Rejoindre le bureau pour rédiger le rapport",
+    "chapitre_1_termine_rapport_valide": "Chapitre 1 terminé — rapport validé"
+  },
+  "notifications": {
+    "bienvenue_bureau": "Bienvenue au Bureau !",
+    "nouvelle_zone_accessible_experimentation": "Nouvelle zone accessible : expérimentation",
+    "vous_pouvez_consulter_panneau_zener": "Vous pouvez consulter le panneau de Zener",
+    "laboratoire_simulation_deverrouille": "Laboratoire de simulation déverrouillé",
+    "dossier_pret_pour_cloture": "Dossier prêt pour la clôture",
+    "approchez_vous_element_interactif": "Approchez-vous d’un élément interactif"
+  },
+  "decor": {
+    "bureau_archives": "BUREAU / ARCHIVES",
+    "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
+    "bureau_dossiers": "BUREAU DES DOSSIERS",
+    "simulateur": "SIMULATEUR ↑",
+    "rapport": "RAPPORT ↓",
+    "cartes": "CARTES ↑",
+    "terminal": "TERMINAL ↓"
+  }
+}

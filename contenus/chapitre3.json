@@ -1,0 +1,453 @@
+{
+  "interface": {
+    "titre_onglet": "Le Bureau de l'extraordinaire — Chapitre 3 · Une performance imparfaite",
+    "sous_titre": "Chapitre 03 · Une performance imparfaite",
+    "note": "Ce prototype fonctionne localement, sans collecte de données. La performance de Salomé (8 sur 20) est <b>scénarisée</b> pour l'apprentissage ; les tirages du simulateur sont réellement aléatoires et indépendants.",
+    "indice_scene": "Cliquez pour interagir",
+    "commandes": {
+      "aide": "? Aide",
+      "chapitre_precedent": "← Chapitre 2"
+    }
+  },
+  "dialogues": {
+    "mission_salome": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Camille avait deviné <b>une carte sur une</b> : au hasard, cela arrive environ <b>une fois sur cinq</b>. Elias avait deviné <b>cinq cartes sur cinq</b> : au hasard, cela arrive seulement environ <b>une fois sur 3 125</b>. Ce qui change, c’est la fréquence de ces résultats <b>lorsqu’il n’y a aucun pouvoir</b>. Mais que penser d’une performance <b>imparfaite</b> ? Salomé va essayer de prédire <b>20 cartes</b>. Si son pouvoir existe, il devrait lui permettre de <b>réussir davantage</b> de prédictions qu’en devinant. Pour chaque carte, cinq symboles sont possibles.",
+      "actions": {
+        "aller_rencontrer_salome_salle_droite": {
+          "libelle": "Aller rencontrer Salomé, dans la salle de droite →"
+        }
+      }
+    },
+    "invitation_au_simulateur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Huit réussites sur vingt… Est-ce étonnant ? Pour le savoir, je vous propose de comparer cette performance aux résultats de parties <b>sans aucun pouvoir</b>. Le simulateur est <b>en haut à gauche</b>, dans la pièce du bureau.",
+      "actions": {
+        "aller_simulateur_s_03": {
+          "libelle": "Aller au simulateur S-03 →"
+        }
+      }
+    },
+    "lecture_parties_virtuelles": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Laissez s’accumuler les parties virtuelles. Vous verrez combien de réussites sont habituelles dans des parties où tout est dû au hasard. Nous examinerons ensuite quelles parties nous aident vraiment à apprécier la performance de Salomé."
+    },
+    "invitation_au_rapport": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Vous pouvez rédiger votre rapport. Le bureau des dossiers est dans <b>cette pièce de gauche, tout en bas</b> : repérez la <b>grande feuille claire</b> sur la table."
+    },
+    "invitation_au_terminal": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Salomé attend dans la salle de droite. Le terminal de tirage se trouve juste en dessous d’elle."
+    },
+    "attente_salome": {
+      "personnage": "Salomé",
+      "texte": "Bonjour ! Le professeur Sig. Nificatif voulait vous remettre un dossier avant de commencer."
+    },
+    "protocole_salome": {
+      "personnage": "Salomé",
+      "texte": "Je vais annoncer vingt symboles. Je les enregistrerai <b>avant</b> que la machine ne fasse ses tirages. Les cinq symboles sont <b>équiprobables</b> : chacun a exactement <b>une chance sur cinq</b> de sortir. Aucun n’est favorisé. Les tirages ne dépendent pas des précédents.",
+      "actions": {
+        "allons_terminal_tirage": {
+          "libelle": "Allons au terminal de tirage →"
+        }
+      }
+    },
+    "commentaire_salome": {
+      "personnage": "Salomé",
+      "texte": {
+        "avant_tirages": "Mes vingt prédictions sont enregistrées. Allez au terminal pour révéler les cartes.",
+        "apres_tirages": "J’ai trouvé huit bonnes cartes sur vingt… Ce n’est pas parfait, mais est-ce si facile sans pouvoir ?"
+      }
+    },
+    "terminal_verrouille": {
+      "personnage": "Terminal de tirage",
+      "texte": "Vous devez d’abord discuter avec Salomé."
+    },
+    "orientation_simulateur": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Bonne idée. Le <b>simulateur S-03</b> se trouve en <b>haut à gauche</b>, dans la pièce du Bureau. Il pourra générer des milliers de parties sans personne et sans pouvoir.",
+      "actions": {
+        "aller_simulateur": {
+          "libelle": "Aller au simulateur →"
+        }
+      }
+    },
+    "simulateur_verrouille": {
+      "personnage": "Simulateur S-03",
+      "texte": "Les expériences virtuelles seront disponibles après les tirages de Salomé."
+    },
+    "explication_rarete": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Exactement. Avec les règles connues du tirage, <b>8 réussites ou davantage</b> se produisent environ <b>3 fois sur 100</b> en l’absence de pouvoirs. Nous avons maintenant de quoi rédiger un rapport. Le <b>bureau des dossiers se trouve en bas de la pièce de gauche</b>, sur la grande feuille claire.",
+      "actions": {
+        "aller_rediger_rapport": {
+          "libelle": "Aller rédiger le rapport →"
+        }
+      }
+    },
+    "rapport_indisponible": {
+      "personnage": "Bureau des dossiers",
+      "texte": "Le rapport nº 003 n’est pas prêt : terminez d’abord la comparaison sur le simulateur."
+    }
+  },
+  "questions": {
+    "interpretation_salome": {
+      "titre": "UNE PERFORMANCE IMPARFAITE",
+      "texte": [
+        "<div class=\"person\">Professeur Sig. Nificatif</div><p>Salomé a obtenu <b>8 réussites sur 20</b>. Cela vous paraît-il particulièrement surprenant ?</p>",
+        "<p>Avant de conclure, réfléchissez à ce que pourraient réussir des parties où <b>les prédictions et les cartes sont seulement tirées au hasard</b>.</p>{{feedback}}"
+      ],
+      "reponses": {
+        "comparaison_au_hasard": {
+          "libelle": "J’aimerais comparer son résultat à des parties entièrement dues au hasard.",
+          "feedback": "C’est le moyen d’évaluer à quel point sa performance est inhabituelle si la précognition est absente."
+        },
+        "preuve_pouvoir": {
+          "libelle": "Huit réussites prouvent que Salomé possède un pouvoir.",
+          "feedback": "Nous ne savons pas encore à quelle fréquence un tel résultat pourrait survenir en l’absence de précognition."
+        },
+        "resultat_forcement_ordinaire": {
+          "libelle": "Elle a échoué douze fois : son résultat est forcément ordinaire.",
+          "feedback": "Le nombre d’échecs ne suffit pas. Une performance imparfaite peut être inhabituelle lorsque chaque réussite est difficile à obtenir."
+        }
+      },
+      "actions": {
+        "revoir_cartes_salome": {
+          "libelle": "Revoir les cartes de Salomé"
+        }
+      }
+    },
+    "lecture_barre_histogramme": {
+      "titre": "LIRE L’HISTOGRAMME — ÉTAPE 1",
+      "texte": "<p>Avant de comparer les résultats à ceux de Salomé, observons les barres.</p>{{histogramme}}<p><b>Que représente une barre située au-dessus du nombre 4 ?</b></p>{{feedback}}",
+      "reponses": {
+        "effectif_exactement_quatre": {
+          "libelle": "Le nombre de parties virtuelles qui ont obtenu exactement 4 bonnes réponses sur 20.",
+          "feedback": "Chaque barre regroupe les parties qui ont obtenu un nombre précis de réussites. Sa hauteur indique combien de parties ont obtenu ce résultat."
+        },
+        "quatre_premieres_cartes": {
+          "libelle": "Les quatre premières cartes tirées dans une seule partie.",
+          "feedback": "Nous sommes ici sur un graphique de résultats de nombreuses parties, pas sur l’ordre des cartes d’une seule partie."
+        },
+        "probabilite_du_pouvoir": {
+          "libelle": "La probabilité qu’un candidat possède des pouvoirs.",
+          "feedback": "Toutes ces parties sont créées sans pouvoirs : elles servent à décrire les résultats dus au hasard."
+        },
+        "effectif_au_moins_quatre": {
+          "libelle": "L’ensemble de toutes les parties qui ont obtenu au moins 4 réussites.",
+          "feedback": "Une barre correspond à exactement un nombre de réussites. Additionner plusieurs barres sera notre prochaine étape."
+        }
+      }
+    },
+    "lecture_repartition_histogramme": {
+      "titre": "LIRE L’HISTOGRAMME — ÉTAPE 2",
+      "texte": "<p>Regardez où les barres sont les plus hautes, puis comparez-les à celles situées vers 8 réussites et au-delà.</p>{{histogramme}}<p><b>Que nous apprend la répartition des performances quand tout est dû au hasard ?</b></p>{{feedback}}",
+      "reponses": {
+        "scores_eleves_rares": {
+          "libelle": "La plupart des parties obtiennent quelques réussites ; les scores très élevés sont plus rares.",
+          "feedback": "Une distribution permet de voir les performances communes et celles qui le sont beaucoup moins. Celle-ci se concentre autour de quatre réussites.",
+          "feedback_erreur": "Vous savez maintenant lire les barres. Il reste à décider <b>quelles barres</b> prendre en compte pour évaluer le résultat de Salomé."
+        },
+        "frequences_egales": {
+          "libelle": "Toutes les performances de 0 à 20 sont aussi fréquentes.",
+          "feedback": "Comparez les hauteurs : certaines performances apparaissent bien plus souvent que d’autres."
+        },
+        "impossibilite_huit": {
+          "libelle": "Huit réussites sont forcément impossibles sans pouvoirs.",
+          "feedback": "Une barre petite, voire absente d’un nombre limité de simulations, ne signifie pas qu’un résultat est impossible."
+        },
+        "score_constant": {
+          "libelle": "Chaque nouvelle partie doit produire le même nombre de réussites.",
+          "feedback": "Les parties sont indépendantes et peuvent obtenir des nombres de réussites différents."
+        }
+      }
+    },
+    "compter_les_meilleures_performances": {
+      "titre": "QUE FAUT-IL COMPARER ?",
+      "texte": [
+        "<div class=\"person\">Professeur Sig. Nificatif</div><p>Salomé a obtenu <b>8 réussites sur 20</b>. Nous voulons savoir si cette performance est surprenante lorsque tout est dû au hasard. Pour mesurer sa rareté, nous devons décider ce qui serait <b>au moins aussi impressionnant</b>.</p>",
+        "<p>Imaginons une partie virtuelle avec <b>9 réussites</b>. Faut-il également en tenir compte ?</p>{{feedback}}"
+      ],
+      "reponses": {
+        "exactement_huit": {
+          "libelle": "Non, il faut uniquement compter les parties avec exactement 8 réussites.",
+          "feedback": "Mais une partie avec 9 réussites serait encore meilleure que celle de Salomé. Ne serait-elle pas, elle aussi, étonnante ?"
+        },
+        "inclure_neuf": {
+          "libelle": "Oui, 9 réussites seraient encore plus impressionnantes.",
+          "feedback": "Cette partie dépasserait le résultat de Salomé. Une performance supérieure doit donc également être examinée."
+        },
+        "au_plus_huit": {
+          "libelle": "Non, il suffit de compter les parties avec 8 réussites ou moins.",
+          "feedback": "Les parties avec moins de 8 réussites sont moins impressionnantes que celle de Salomé. Réfléchissez à ce qui serait aussi surprenant ou davantage."
+        }
+      },
+      "actions": {
+        "revoir_histogramme": {
+          "libelle": "Revoir l’histogramme"
+        }
+      }
+    },
+    "definir_la_comparaison": {
+      "titre": "DÉFINIR LA COMPARAISON",
+      "texte": [
+        "<div class=\"person\">Professeur Sig. Nificatif</div><p>Nous venons de voir qu’une partie avec <b>9 réussites</b> doit compter également : elle serait encore plus impressionnante.</p>",
+        "<p>Pour connaître la fréquence des performances <b>au moins aussi bonnes</b> que celle de Salomé, quelles parties devrions-nous additionner ?</p>{{feedback}}"
+      ],
+      "reponses": {
+        "exactement_huit": {
+          "libelle": "Seulement les parties avec exactement 8 réussites.",
+          "feedback": "Nous laisserions de côté des performances encore meilleures, comme 9 ou 10 réussites."
+        },
+        "de_huit_a_vingt": {
+          "libelle": "Les parties de 8 à 20 réussites incluses.",
+          "feedback": "Exactement : huit réussites comme Salomé, mais aussi neuf, dix et toutes les performances encore meilleures.",
+          "feedback_erreur": "Nous <b>devrions compter</b> toutes les parties avec 8, 9, 10… jusqu’à 20 réussites. Les barres correspondantes sont maintenant en doré, et le simulateur les additionne."
+        },
+        "de_zero_a_huit": {
+          "libelle": "Les parties avec 0 à 8 réussites incluses.",
+          "feedback": "Les scores de 0 à 7 seraient inférieurs à celui de Salomé. Ils ne répondent pas à notre question."
+        }
+      },
+      "actions": {
+        "retour_question_precedente": {
+          "libelle": "Retour à la question précédente"
+        }
+      }
+    },
+    "interpretation_rarete": {
+      "titre": "UNE OBSERVATION TRÈS RARE",
+      "texte": [
+        "<p>Vous avez observé <b>{{parties_rares}} résultats avec 8 réussites ou davantage</b> parmi <b>{{parties}} parties sans pouvoirs</b>, soit environ <b>{{probabilite}} %</b>.</p>",
+        "<p>Que pouvons-nous dire de Salomé ?</p>{{feedback}}"
+      ],
+      "reponses": {
+        "rarete_sans_preuve": {
+          "libelle": "Son résultat serait rare sans pouvoirs, mais ne prouve pas qu’elle en possède.",
+          "feedback": "Les tirages virtuels permettent d’évaluer sa rareté si tout est dû au hasard ; ils ne révèlent pas les véritables capacités de Salomé."
+        },
+        "preuve_pouvoir": {
+          "libelle": "Nous avons démontré qu’elle possède un pouvoir.",
+          "feedback": "Non : une performance rare peut arriver sans aucun pouvoir. La rareté n’est pas une preuve absolue."
+        },
+        "preuve_absence_pouvoir": {
+          "libelle": "Ses erreurs prouvent qu’elle ne possède aucun pouvoir.",
+          "feedback": "Pas nécessairement. Un pouvoir, s’il existait, pourrait aussi produire des performances imparfaites."
+        }
+      },
+      "actions": {
+        "revoir_simulations": {
+          "libelle": "Revoir les simulations"
+        }
+      }
+    },
+    "rapport_salome": {
+      "titre": "RAPPORT D’ENQUÊTE — DOSSIER 003",
+      "texte": [
+        "<p class=\"person\">Sujet : Salomé · 8 prédictions correctes sur 20</p>",
+        "<p>Dans {{parties}} parties fictives sans pouvoirs, <b>{{parties_rares}}</b> ont obtenu 8 réussites ou davantage.</p>",
+        "<p><b>Pourquoi avons-nous compté les performances supérieures à 8 réussites ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "meilleures_performances": {
+          "libelle": "Parce qu’elles sont encore plus impressionnantes, et donc au moins aussi étonnantes dans le monde sans pouvoirs.",
+          "feedback": "Pour apprécier la rareté du résultat de Salomé sous les règles du hasard, il faut inclure huit réussites ainsi que toutes les performances meilleures."
+        },
+        "toutes_les_performances": {
+          "libelle": "Parce que nous devons compter toutes les performances possibles.",
+          "feedback": "Nous ne comptons pas toutes les performances : seulement celles qui sont au moins aussi impressionnantes que le résultat observé."
+        },
+        "preuve_pouvoir": {
+          "libelle": "Parce qu’elles prouvent que certaines personnes ont des pouvoirs.",
+          "feedback": "Il n’y a aucun personnage dans le simulateur : ces résultats sont entièrement produits par des tirages au hasard."
+        },
+        "meilleures_plus_frequentes": {
+          "libelle": "Parce qu’une partie avec plus de 8 réussites serait plus fréquente par hasard.",
+          "feedback": "Au contraire, dans ce dispositif, les résultats supérieurs à 8 sont encore moins fréquents. Nous les ajoutons parce qu’ils sont au moins aussi impressionnants."
+        }
+      },
+      "actions": {
+        "revoir_simulateur": {
+          "libelle": "Revoir le simulateur"
+        }
+      }
+    }
+  },
+  "ecrans": {
+    "dossier_salome": {
+      "titre": "DOSSIER Nº 003 — UNE PERFORMANCE IMPARFAITE",
+      "texte": [
+        "<div class=\"introart\" aria-hidden=\"true\">▥</div><p>Nouvelle recrue, nouveau mystère. Votre prochaine visiteuse, <b>Salomé</b>, affirme pouvoir anticiper les cartes d'un tirage aléatoire.</p>",
+        "<p>Cette fois, elle tentera <b>20 prédictions</b>. Il ne faudra pas nécessairement réussir toutes les cartes pour obtenir un résultat étonnant.</p>",
+        "<p class=\"tiny\">Cliquez directement sur les personnes et les machines pour interagir. Le bureau des rapports se trouve en bas à gauche.</p>"
+      ],
+      "actions": {
+        "ouvrir_dossier": {
+          "libelle": "Ouvrir le dossier →"
+        }
+      }
+    },
+    "panneau_zener": {
+      "titre": "LES CINQ SYMBOLES",
+      "texte": "<p>Le terminal utilise cinq symboles possibles, tous <b>équiprobables</b> : cela signifie que chacun a <b>autant de chances que les autres</b> de sortir, soit une chance sur cinq.</p>{{cartes}}<div class=\"note\"><b>Indépendance :</b> chaque nouveau tirage repart de zéro. Obtenir une étoile maintenant ne rend pas une étoile plus ou moins probable au prochain tirage.</div>",
+      "actions": {
+        "revenir_salle": {
+          "libelle": "Revenir à la salle"
+        }
+      }
+    },
+    "series_salome": {
+      "titre": {
+        "apres_tirages": "RÉSULTAT — 8 SUR 20",
+        "avant_tirages": "EXPÉRIENCE — 20 PRÉDICTIONS"
+      },
+      "variantes": {
+        "texte_pluriel": {
+          "avant_tirages": "Prêt pour la première série",
+          "tirages_en_cours": "{{reussites}} réussite{{pluriel}} sur {{cartes_revelees}} cartes révélées"
+        },
+        "texte_resultat_final": {
+          "apres_tirages": "<p class=\"success\" style=\"text-align:center\">Total : 8 bonnes réponses sur 20</p>"
+        }
+      },
+      "texte": [
+        "<p class=\"tiny\">Les vingt prédictions de Salomé ont été enregistrées <b>avant le premier tirage</b>. Vous révélez les cartes en quatre séries. Cliquez sur une série terminée pour revoir ses cartes.</p>",
+        "\n <div class=\"series-tabs\">{{onglets_series}}</div>\n <div class=\"small-label\">Série {{numero_serie}} — prédictions enregistrées</div>{{predictions}}\n <div class=\"small-label\">Série {{numero_serie_2}} — cartes effectivement tirées</div>{{cartes_tirees}}\n <div class=\"series-summary\">{{resume_series}}</div>\n <p class=\"emph\" style=\"text-align:center\">{{pluriel}}</p>\n {{resultat_final}}"
+      ],
+      "actions": {
+        "penser_ce_resultat": {
+          "libelle": "Que penser de ce résultat ? →"
+        },
+        "revenir_salle": {
+          "libelle": "Revenir dans la salle"
+        },
+        "revoir_toutes_series": {
+          "libelle": "Revoir toutes les séries"
+        },
+        "reveler_serie": {
+          "libelle": "Révéler la série {{numero_serie}} sur 4 →"
+        }
+      }
+    },
+    "mode_emploi_simulateur": {
+      "titre": "SIMULATEUR S-03 — QUE FAIT LA MACHINE ?",
+      "texte": [
+        "<p>Imaginez un jeu vidéo qui fabrique autant de <b>parties fictives</b> que vous le souhaitez.</p>",
+        "<div class=\"note\">Pour chaque partie, l’ordinateur génère <b>vingt prédictions au hasard</b>, puis <b>vingt cartes au hasard</b>, indépendamment. Il compte les bonnes réponses. <b>Aucune personne, réelle ou fictive, ne joue</b> : tout est produit par le hasard.</div><p>Au bout de nombreuses parties, nous pourrons voir si obtenir <b>8 bonnes prédictions</b>, comme Salomé, est fréquent ou inhabituel.</p>"
+      ],
+      "actions": {
+        "lancer_premieres_parties_virtuelles": {
+          "libelle": "Lancer les premières parties virtuelles →"
+        }
+      }
+    },
+    "simulateur": {
+      "titre": "SIMULATEUR S-03 — 20 CARTES",
+      "variantes": {
+        "texte_explication_comparaison": {
+          "comparaison_definie": "Les barres dorées montrent les parties ayant obtenu <b>8 réussites ou davantage</b>."
+        },
+        "texte_resume_comparaison": {
+          "comparaison_definie": "<div class=\"compare\"><b class=\"mint\">Performances de 8 à 20 réussites : {{resume_effectifs}}</b><p class=\"tiny\">Il ne suffit pas de compter exactement 8 : obtenir 9, 10, 11… serait encore plus impressionnant.</p></div>"
+        },
+        "texte_indication_progression": {
+          "simulation_insuffisante": "Créez au moins 1 000 parties pour poursuivre. Leurs résultats ne seront pas tous identiques.",
+          "simulation_suffisante": "Vous avez assez de parties pour poursuivre. Vous pouvez aussi en créer davantage."
+        }
+      },
+      "texte": "<p class=\"tiny\">Chaque barre rassemble des <b>parties fabriquées par l’ordinateur</b> : vingt prédictions au hasard et vingt cartes tirées indépendamment. Aucun personnage ne joue ces parties.</p>{{derniere_partie}}<div class=\"stats\"><div class=\"stat\"><b>{{parties}}</b><span>parties virtuelles</span></div><div class=\"stat\"><b>{{moyenne}}</b><span>réussites moyennes</span></div><div class=\"stat\"><b>{{parties_exactement_8}}</b><span>exactement 8 sur 20</span></div></div><div class=\"small-label\">Nombre de bonnes prédictions par partie virtuelle</div>{{histogramme}}<p class=\"tiny\">Chaque barre représente un nombre de bonnes prédictions. Plus elle est haute, plus de parties ont obtenu ce résultat. {{explication_comparaison}}</p>{{resume_comparaison}}{{message}}<div class=\"line\"></div><p class=\"tiny\">{{indication_progression}}</p>",
+      "actions": {
+        "1_partie": {
+          "libelle": "+1 partie"
+        },
+        "20_parties": {
+          "libelle": "+20 parties"
+        },
+        "200_parties": {
+          "libelle": "+200 parties"
+        },
+        "2_000_parties": {
+          "libelle": "+2 000 parties"
+        },
+        "10_000_parties": {
+          "libelle": "+10 000 parties"
+        },
+        "comprendre_histogramme": {
+          "libelle": "Comprendre l’histogramme →"
+        },
+        "quelles_performances_compter": {
+          "libelle": "Quelles performances compter ? →"
+        },
+        "faire_bilan_enquete": {
+          "libelle": "Faire le bilan de l’enquête →"
+        },
+        "quitter_simulateur": {
+          "libelle": "Quitter le simulateur"
+        }
+      },
+      "derniere_partie": {
+        "oui": "<div class=\"note\">Dernière partie créée : <b>{{reussites}} bonnes prédictions sur 20</b>. Chaque partie recommence l’expérience avec de nouveaux tirages indépendants.</div>",
+        "non": "<div class=\"note\">Lancez une partie pour voir combien de cartes correspondent lorsque tout est tiré au hasard.</div>"
+      },
+      "resume_effectifs": "{{parties_rares}} partie{{pluriel}} sur {{parties}} ({{frequence_en_pourcent}} %)",
+      "effectif_barre": "{{score}} bonnes réponses : {{effectif}} parties"
+    },
+    "fin_chapitre": {
+      "titre": "CHAPITRE 3 TERMINÉ",
+      "texte": [
+        "<p class=\"person\">Rapport validé · Dossier nº 003</p>",
+        "<p><b>Professeur Sig. Nificatif :</b> « Il n’est pas nécessaire de tout réussir pour produire une performance surprenante. Mais le nombre de réussites ne suffit pas : il faut connaître les performances possibles quand il n’y a <b>aucun pouvoir</b>. »</p>",
+        "<div class=\"note\"><b>Ce que vous avez découvert :</b> pour savoir à quel point un résultat est surprenant, on comptabilise non seulement les résultats identiques, mais aussi <b>tous les résultats au moins aussi impressionnants</b> dans le monde sans pouvoirs.</div><p>Dans cette expérience, le résultat de Salomé (8/20) ou un résultat meilleur se produirait chez une personne sans pouvoirs avec une fréquence théorique d’environ <b>{{probabilite}} %</b>.</p>",
+        "<p>« Et si le Bureau devait établir une règle commune pour savoir quand ouvrir une enquête approfondie ? »</p>",
+        "<p><b>Prochain dossier :</b> « Le règlement du Bureau » — décider à partir d’un seuil commun, et découvrir que même les décisions raisonnables peuvent être erronées.</p>"
+      ],
+      "actions": {
+        "continuer_chapitre_4_reglement_bureau": {
+          "libelle": "Continuer : chapitre 4 — Le règlement du Bureau →"
+        },
+        "retourner_laboratoire": {
+          "libelle": "Retourner dans le laboratoire"
+        },
+        "recommencer_chapitre": {
+          "libelle": "Recommencer le chapitre"
+        }
+      }
+    },
+    "aide": {
+      "titre": "AIDE — CHAPITRE 3",
+      "texte": [
+        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la grande feuille en bas à gauche.</p>",
+        "<p><b>Repères :</b> la salle de droite accueille Salomé et le terminal. Dans la salle de gauche, le <b>simulateur est en haut</b> et le <b>rapport est sur la table en bas</b>.</p>",
+        "<div class=\"note\"><b>Partie virtuelle :</b> une expérience entièrement inventée et tirée au hasard par l’ordinateur, sans participant réel et sans pouvoirs.</div><p>Objectif : comprendre pourquoi, pour apprécier une performance de 8 réussites sur 20, il faut compter les performances <b>au moins aussi bonnes</b>.</p>"
+      ],
+      "actions": {
+        "reprendre": {
+          "libelle": "Reprendre"
+        }
+      }
+    }
+  },
+  "objectifs": {
+    "rencontrer_professeur_sig_nificatif_bureau_gauche": "Rencontrer le professeur Sig. Nificatif dans le bureau, à gauche",
+    "parler_salome_salle_droite": "Parler à Salomé dans la salle de droite",
+    "trouver_simulateur_s_03_haut_gauche": "Trouver le simulateur S-03 en haut à gauche",
+    "lancer_4_series_5_cartes_terminal_bas": "Lancer les 4 séries de 5 cartes au terminal, en bas à droite",
+    "simuler_series_20_cartes_observer_repartition": "Simuler des séries de 20 cartes et observer la répartition",
+    "rapport_piece_gauche_grande_feuille_claire_bas": "Rapport : pièce gauche, grande feuille claire en bas",
+    "chapitre_3_termine_dossier_valide": "Chapitre 3 terminé — dossier validé"
+  },
+  "notifications": {
+    "nouveau_dossier_ouvert": "Nouveau dossier ouvert",
+    "approchez_vous_element_interactif": "Approchez-vous d’un élément interactif"
+  },
+  "decor": {
+    "bureau_archives": "BUREAU / ARCHIVES",
+    "rapport": "RAPPORT ↓",
+    "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
+    "bureau_dossiers": "BUREAU DES DOSSIERS",
+    "simulateur": "SIMULATEUR ↑",
+    "cartes": "CARTES ↑",
+    "terminal": "TERMINAL ↓"
+  }
+}

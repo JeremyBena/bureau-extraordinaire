@@ -1,0 +1,587 @@
+{
+  "interface": {
+    "titre_onglet": "Le Bureau de l'extraordinaire — Chapitre 5 · Le prix de l’incertitude",
+    "sous_titre": "Chapitre 05 · Le prix de l’incertitude",
+    "note": "Ce prototype fonctionne localement, sans collecte de données. Les deux premiers dossiers sont scénarisés pour montrer deux erreurs possibles. Les enquêtes libres déterminent aléatoirement les capacités du candidat, sans collecte de données.",
+    "indice_scene": "Cliquez pour interagir",
+    "commandes": {
+      "aide": "? Aide",
+      "chapitre_precedent": "← Chapitre 4"
+    }
+  },
+  "dialogues": {
+    "conseil_reglement": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Appliquez le règlement sans chercher à deviner la vérité. Nous découvrirons ensuite ce qu’il en est réellement."
+    },
+    "invitation_au_terminal": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Notre candidat {{candidat}} se trouve dans la pièce de droite. Il va tenter vingt prédictions. Le <b>terminal</b> est en bas de cette pièce.",
+      "actions": {
+        "aller_voir_candidat": {
+          "libelle": "Aller voir le candidat →"
+        }
+      }
+    },
+    "invitation_au_rapport": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Les tirages sont terminés. Vous pouvez consulter le simulateur si vous voulez vérifier la fréquence des performances dans un monde sans pouvoirs. Pour votre décision, le <b>rapport est sur la table en bas à gauche</b>."
+    },
+    "rappel_incertitude": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Notre règlement sert à prendre une décision raisonnable. Mais aucune décision fondée sur une observation incertaine ne garantit la vérité."
+    },
+    "dossier_non_ouvert": {
+      "personnage": "Accueil",
+      "texte": "Parlez d’abord au professeur Sig. Nificatif."
+    },
+    "protocole_candidat": {
+      "variantes": {
+        "texte_formule_presentation": {
+          "noor": "Je suis prête.",
+          "autres_candidats": "Je suis prêt."
+        }
+      },
+      "texte": "{{formule_presentation}} Mes vingt prédictions ont été enregistrées avant tout tirage. Les cinq cartes sont équiprobables : chacune a une chance sur cinq d’apparaître.",
+      "actions": {
+        "voir_mes_predictions_terminal": {
+          "libelle": "Voir mes prédictions au terminal →"
+        }
+      }
+    },
+    "commentaire_candidat": {
+      "texte": "J’ai terminé mes vingt prédictions. Qu’allez-vous conclure ?"
+    },
+    "terminal_verrouille": {
+      "personnage": "Terminal",
+      "texte": "Un dossier doit d’abord être ouvert."
+    },
+    "preparation_rapport": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Vous avez observé {{score}} réussites sur 20. <b>Votre décision</b> doit dépendre du règlement : une performance au moins aussi bonne doit être obtenue par hasard dans au plus cinq cas sur cent. Le rapport est en bas de la pièce de gauche.",
+      "actions": {
+        "aller_dossiers": {
+          "libelle": "Aller aux dossiers →"
+        }
+      }
+    },
+    "simulateur_sans_dossier": {
+      "personnage": "Simulateur",
+      "texte": "Aucun dossier actif."
+    },
+    "simulateur_verrouille": {
+      "personnage": "Simulateur",
+      "texte": "Terminez d’abord les tirages."
+    },
+    "rapport_indisponible": {
+      "personnage": "Bureau des rapports",
+      "texte": "Les tirages doivent être terminés avant de rendre un rapport."
+    },
+    "bilan_basile": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Notre première enquête montre qu’une performance très rare <b>peut malgré tout se produire sans pouvoirs</b>. Voici un deuxième dossier. Cette fois, ne confondez pas une absence de résultat surprenant avec une preuve d’absence de pouvoir.",
+      "actions": {
+        "ouvrir_dossier_noor": {
+          "libelle": "Ouvrir le dossier de Noor →"
+        }
+      }
+    },
+    "bilan_noor": {
+      "personnage": "Professeur Sig. Nificatif",
+      "texte": "Les deux dossiers étaient instructifs. Le jeu avait fixé les paramètres des capacités avant les tirages : Basile n’avait aucun pouvoir, mais a obtenu une performance exceptionnelle. Noor avait un pouvoir relativement faible, que cette expérience n’a pas permis de détecter. Voyons ce que vous feriez avec une personne dont <b>les véritables capacités sont tirées au sort</b>.",
+      "actions": {
+        "commencer_enquete_aleatoire": {
+          "libelle": "Commencer une enquête aléatoire →"
+        }
+      }
+    }
+  },
+  "questions": {
+    "decision_enquete": {
+      "titre": "RAPPORT D’ENQUÊTE — DÉCISION",
+      "texte": [
+        "<p><b>{{candidat}} : {{score}} réussites sur 20</b>.</p>",
+        "<p>Si toutes les prédictions étaient dues au hasard, obtenir une performance au moins aussi bonne surviendrait <b>{{probabilite}}</b> du temps.</p>",
+        "<p>Règlement : <b>5 %</b>. Que devons-nous conclure ?</p>{{feedback}}"
+      ],
+      "reponses": {
+        "rejeter_absence_pouvoir": {
+          "libelle": "Remettre en question l’absence de pouvoirs.",
+          "feedback": "Cette fréquence ne dépasse pas 5 %. Le règlement conduit à remettre en question l’absence de pouvoirs. Cela ne garantit pourtant pas l’existence de pouvoirs.",
+          "feedback_erreur": "Cette fréquence est supérieur à 5 %. Cette performance n’est pas suffisamment rare selon notre règlement."
+        },
+        "maintenir_absence_pouvoir": {
+          "libelle": "Ne pas remettre en question l’absence de pouvoirs.",
+          "feedback": "Cette fréquence dépasse 5 %. Le règlement ne nous autorise pas à remettre en question l’absence de pouvoirs. Cela ne prouve pas l’absence de pouvoir.",
+          "feedback_erreur": "Cette fréquence est inférieur ou égal à 5 %. Le règlement conduit à remettre en question l’absence de pouvoirs."
+        },
+        "conclusion_certaine": {
+          "libelle": "Conclure avec certitude si des pouvoirs existent.",
+          "feedback": "Même une décision conforme au règlement ne révèle pas avec certitude les capacités réelles du candidat."
+        }
+      },
+      "actions": {
+        "revoir_monde_sans_pouvoirs": {
+          "libelle": "Revoir le monde sans pouvoirs"
+        }
+      }
+    },
+    "hypothese_epilogue": {
+      "titre": "ÉPILOGUE — {{titre_theme}}",
+      "texte": [
+        "<p>{{presentation_theme}}</p>",
+        "<p>Les deux groupes présentent un écart observé de <b>3 points</b> sur la mesure étudiée (valeur illustrative).</p>",
+        "<p><b>Quelle hypothèse permet de construire un monde de comparaison ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "absence_effet": {
+          "libelle": "{{phenomene}} n’a pas d’effet sur {{mesure}}.",
+          "feedback": "Le point de départ est un monde dans lequel le phénomène étudié ne produit aucune différence."
+        },
+        "effet_present": {
+          "libelle": "L’effet est présent et suffisamment important pour être visible chez chaque personne.",
+          "feedback": "Nous souhaitons justement évaluer si les observations justifient de remettre en question l’absence d’effet."
+        },
+        "moyennes_identiques": {
+          "libelle": "Les moyennes observées des deux groupes doivent nécessairement être identiques.",
+          "feedback": "Même si aucun effet n’existe, les moyennes calculées sur deux échantillons peuvent différer."
+        },
+        "scores_identiques": {
+          "libelle": "Les participants doivent nécessairement obtenir le même score.",
+          "feedback": "Une hypothèse d’absence d’effet n’implique pas que les performances soient identiques entre les individus."
+        }
+      }
+    },
+    "simulation_epilogue": {
+      "titre": "ÉPILOGUE — CONSTRUIRE LE MONDE SANS EFFET",
+      "texte": "<p>{{contexte}}</p><p><b>Que faire pour examiner ce que produirait le hasard ?</b></p>{{feedback}}",
+      "reponses": {
+        "repartir_les_scores": {
+          "libelle": {
+            "memoire": "Réattribuer fictivement les étiquettes des groupes aux scores, sous l’hypothèse d’échangeabilité.",
+            "experience": "Redistribuer au hasard les 40 scores entre deux groupes de 20, puis recommencer."
+          },
+          "feedback": "Cette démarche construit une distribution de comparaison sous l’hypothèse de référence ; son interprétation dépend des hypothèses retenues."
+        },
+        "difference_observee": {
+          "libelle": "Calculer seulement la différence entre les deux moyennes observées.",
+          "feedback": "Cela décrit l’observation, mais ne montre pas quelle différence le hasard pourrait produire sous l’hypothèse retenue."
+        },
+        "comparer_scores_identiques": {
+          "libelle": "Comparer seulement les personnes ayant obtenu exactement le même score.",
+          "feedback": "L’objectif est d’examiner une différence entre groupes, pas de chercher des copies de chaque score individuel."
+        },
+        "modifier_les_scores": {
+          "libelle": "Modifier les scores pour effacer artificiellement les différences.",
+          "feedback": "Nous ne voulons pas fabriquer de données conformes à notre hypothèse."
+        }
+      },
+      "contexte": {
+        "memoire": "Pour cette étude d’âge, la formation des groupes n’est pas aléatoire. On peut comparer les scores en imaginant un monde où leurs distributions seraient identiques, à condition d’admettre que les observations sont échangeables sous cette hypothèse. Cela ne permettrait pas, à soi seul, d’attribuer une différence à l’âge.",
+        "experience": "Les quarante personnes ont été réparties au hasard en deux groupes de vingt. Nous disposons des quarante scores. Sous une hypothèse d’absence d’effet individuel, nous pouvons redistribuer ces scores entre les deux groupes."
+      }
+    },
+    "interpretation_epilogue": {
+      "titre": "ÉPILOGUE — INTERPRÉTER LES SIMULATIONS",
+      "texte": [
+        "<p>Imaginons que le programme ait créé <b>1 000 répartitions fictives</b> respectant notre hypothèse de comparaison. Pour cette activité, le nombre de simulations a été fixé à l’avance. Les résultats ci-dessous sont <b>un exemple fictif fourni pour cet exercice</b>, et non une nouvelle simulation en direct.</p>",
+        "<div class=\"stats\"><div class=\"stat\"><b>1 000</b><span>répartitions aléatoires</span></div><div class=\"stat\"><b>42</b><span>différences d’au moins 3 points en valeur absolue</span></div><div class=\"stat\"><b>4,2 %</b><span>fréquence simulée</span></div></div><p><b>Que signifie ce 4,2 % ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "frequence_sous_h0": {
+          "libelle": "En supposant l’absence d’effet, environ 4,2 % des répartitions simulées donnent une différence au moins aussi extrême.",
+          "feedback": "C’est une estimation de la valeur p, ici à partir d’une simulation sous l’hypothèse nulle."
+        },
+        "probabilite_absence_effet": {
+          "libelle": "La probabilité que la méthode n’ait aucun effet est de 4,2 %.",
+          "feedback": "Cette fréquence concerne les résultats produits dans un monde où l’effet est supposé absent, et non la probabilité de cette hypothèse."
+        },
+        "probabilite_de_l_effet": {
+          "libelle": "La probabilité que la méthode fonctionne est de 95,8 %.",
+          "feedback": "Nous ne calculons pas directement la probabilité que la méthode ait un effet."
+        },
+        "difference_exacte": {
+          "libelle": "Il y a 4,2 % de chances de retrouver exactement trois points de différence.",
+          "feedback": "Nous comptons les différences aussi extrêmes ou davantage, et pas seulement celles qui sont exactement égales à trois points."
+        }
+      }
+    },
+    "conclusion_epilogue": {
+      "titre": "ÉPILOGUE — FORMULER UNE CONCLUSION",
+      "texte": [
+        "<p>Dans ce laboratoire de psychologie, nous estimons à <b>4,2 %</b> la fréquence de résultats au moins aussi extrêmes dans le monde sans effet. La règle de décision avait été fixée à <b>5 %</b>.</p>",
+        "<p><b>Quelle conclusion est justifiée ?</b></p>{{feedback}}"
+      ],
+      "reponses": {
+        "rejeter_absence_effet": {
+          "libelle": "Rejeter l’absence d’effet, sans prétendre être certain que la méthode fonctionne.",
+          "feedback": "La règle conduit à rejeter H₀ ; comme dans le dossier de Basile, cette décision peut néanmoins être erronée."
+        },
+        "prouver_amelioration": {
+          "libelle": "Démontrer que la méthode améliore nécessairement la mémoire.",
+          "feedback": "Un résultat rare sous l’hypothèse nulle n’établit pas avec certitude la réalité de l’effet, ni même sa direction."
+        },
+        "probabilite_de_h0": {
+          "libelle": "Conclure que l’absence d’effet est vraie avec une probabilité de 4,2 %.",
+          "feedback": "La fréquence de résultats extrêmes sous une hypothèse n’est pas la probabilité que cette hypothèse soit vraie."
+        },
+        "maintenir_absence_effet": {
+          "libelle": "Ne pas rejeter l’absence d’effet puisque 42 simulations sur 1 000 lui ressemblent.",
+          "feedback": "Selon le seuil fixé avant l’enquête, une fréquence estimée de 4,2 % conduit à rejeter l’hypothèse nulle."
+        }
+      }
+    },
+    "lien_avec_le_cours": {
+      "titre": "LE LIEN AVEC LE COURS — {{numero_question}}/5",
+      "texte": "<p>Avant de dévoiler les correspondances, retrouvez vous-même le vocabulaire statistique.</p><div class=\"note\">{{definition}}</div><p><b>Quel concept du cours correspond à cette idée ?</b></p>{{feedback}}",
+      "feedback_incorrect": "Ce concept ne correspond pas à cette étape de l’enquête. Reprenez la définition et essayez à nouveau."
+    },
+    "associations": {
+      "hypothese_nulle": {
+        "definition": "L’affirmation selon laquelle le phénomène étudié ne produit pas l’effet recherché.",
+        "reponses": {
+          "hypothese_nulle": {
+            "libelle": "Hypothèse nulle (H₀)",
+            "feedback": "H₀ décrit le monde de comparaison dans lequel on suppose l’absence de l’effet étudié."
+          },
+          "valeur_p": {
+            "libelle": "Valeur p"
+          },
+          "puissance_statistique": {
+            "libelle": "Puissance statistique"
+          },
+          "erreur_type_ii": {
+            "libelle": "Erreur de type II"
+          }
+        }
+      },
+      "distribution_sous_h0": {
+        "definition": "Les résultats que l’on pourrait obtenir dans le monde de comparaison.",
+        "reponses": {
+          "distribution_sous_h0": {
+            "libelle": "Distribution sous H₀",
+            "feedback": "Cette distribution rassemble les résultats possibles si H₀ est vraie, sous les hypothèses utilisées."
+          },
+          "seuil_alpha": {
+            "libelle": "Seuil α"
+          },
+          "erreur_type_i": {
+            "libelle": "Erreur de type I"
+          },
+          "taille_effet_observee": {
+            "libelle": "Taille d’effet observée"
+          }
+        }
+      },
+      "valeur_p": {
+        "definition": "La fréquence des résultats au moins aussi extrêmes que l’observation, sous H₀.",
+        "reponses": {
+          "valeur_p": {
+            "libelle": "Valeur p",
+            "feedback": "La valeur p porte sur les données sous l’hypothèse nulle, pas sur la probabilité que H₀ soit vraie."
+          },
+          "probabilite_h0": {
+            "libelle": "Probabilité de H₀"
+          },
+          "puissance_statistique": {
+            "libelle": "Puissance statistique"
+          },
+          "seuil_alpha": {
+            "libelle": "Seuil α"
+          }
+        }
+      },
+      "seuil_alpha": {
+        "definition": "La limite de rareté choisie avant de prendre une décision.",
+        "reponses": {
+          "seuil_alpha": {
+            "libelle": "Seuil α",
+            "feedback": "Le seuil α définit une règle de décision, il n’est pas calculé à partir des résultats."
+          },
+          "valeur_p": {
+            "libelle": "Valeur p"
+          },
+          "taille_echantillon": {
+            "libelle": "Taille de l’échantillon"
+          },
+          "score_moyen": {
+            "libelle": "Score moyen"
+          }
+        }
+      },
+      "rejet_h0": {
+        "definition": "Remettre en question H₀ lorsque la valeur p est inférieure ou égale au seuil choisi.",
+        "reponses": {
+          "rejet_h0": {
+            "libelle": "Rejet de H₀",
+            "feedback": "Rejeter H₀ est une décision fondée sur le modèle et les observations, pas une certitude absolue."
+          },
+          "preuve_h0_vraie": {
+            "libelle": "Preuve que H₀ est vraie"
+          },
+          "calcul_score_individuel": {
+            "libelle": "Calcul d’un score individuel"
+          },
+          "acceptation_certaine_h1": {
+            "libelle": "Acceptation certaine de H₁"
+          }
+        }
+      }
+    }
+  },
+  "ecrans": {
+    "mission_incertaine": {
+      "titre": "DOSSIER Nº 005 — LE PRIX DE L’INCERTITUDE",
+      "texte": [
+        "<div class=\"introart\" aria-hidden=\"true\">◇</div><p>Vous savez désormais appliquer le règlement des <b>5 %</b>. Mais que se passe-t-il quand votre décision ne correspond pas à la réalité ?</p>",
+        "<p>Vous allez traiter deux enquêtes, puis des dossiers générés au hasard. Le programme fixe secrètement les capacités réelles de chaque personne <b>avant le premier tirage</b>. Vous ne pourrez consulter cette information qu’après avoir conclu.</p>",
+        "<p class=\"tiny\">Cliquez directement sur les personnages et les objets pour interagir. L’objectif reste affiché sous la scène.</p>"
+      ],
+      "actions": {
+        "commencer_premiere_enquete": {
+          "libelle": "Commencer la première enquête →"
+        }
+      }
+    },
+    "panneau_zener": {
+      "titre": "LES CARTES DE ZENER",
+      "texte": "<p>Chaque symbole a <b>exactement une chance sur cinq</b> d’être tiré. Les tirages sont indépendants.</p>{{cartes}}<p class=\"tiny\">Dans le monde de référence, les prédictions et les cartes sont générées au hasard. Nous examinons la fréquence des performances aussi bonnes ou meilleures que celle observée.</p>",
+      "actions": {
+        "revenir": {
+          "libelle": "Revenir"
+        }
+      }
+    },
+    "series_du_dossier": {
+      "titre": {
+        "apres_tirages": "TIRAGES TERMINÉS — {{score}} SUR 20",
+        "avant_tirages": "EXPÉRIENCE — VINGT CARTES"
+      },
+      "texte": [
+        "<p class=\"tiny\">Les prédictions ont été enregistrées <b>avant les tirages</b>. Vous pouvez revoir toutes les séries déjà révélées.</p>",
+        "<div class=\"series-tabs\">{{onglets_series}}</div><div class=\"small-label\">Prédictions de {{candidat}}</div>{{predictions}}<div class=\"small-label\">Cartes tirées par le programme</div>{{cartes_tirees}}<p class=\"emph\" style=\"text-align:center\">{{parties}} réussites sur {{cartes_revelees}} cartes révélées</p>"
+      ],
+      "actions": {
+        "preparer_mon_rapport": {
+          "libelle": "Préparer mon rapport →"
+        },
+        "revenir_salle": {
+          "libelle": "Revenir dans la salle"
+        },
+        "revoir_series": {
+          "libelle": "Revoir les séries"
+        },
+        "reveler_serie": {
+          "libelle": "Révéler la série {{numero_serie}} →"
+        }
+      }
+    },
+    "rappel_monde_sans_pouvoir": {
+      "titre": "SIMULATEUR — RAPPEL DU MONDE SANS POUVOIRS",
+      "texte": [
+        "<p>Le simulateur pourrait fabriquer de nombreuses <b>parties</b> où les prédictions et les cartes sont toutes choisies au hasard, sans personne à l’intérieur.</p>",
+        "<p>Pour <b>{{score}} réussites sur 20</b>, les parties avec cette performance <b>ou meilleure</b> représenteraient <b>{{probabilite}}</b> des parties virtuelles.</p>",
+        "<div class=\"note\">Rappel du règlement : si cette fréquence est <b>au plus 5 %</b>, on remet en question l’absence de pouvoirs. Sinon, on ne la remet pas en question.</div>"
+      ],
+      "actions": {
+        "aller_remplir_rapport": {
+          "libelle": "Aller remplir le rapport →"
+        },
+        "retour_laboratoire": {
+          "libelle": "Retour au laboratoire"
+        }
+      },
+      "probabilite_tres_faible": "moins de 0,01 %"
+    },
+    "revelation_capacites": {
+      "titre": "ARCHIVES SCELLÉES — RÉVÉLATION",
+      "variantes": {
+        "texte_decision": {
+          "rejet": "remettre en question l’absence de pouvoirs",
+          "non_rejet": "ne pas remettre en question l’absence de pouvoirs"
+        }
+      },
+      "texte": [
+        "<div class=\"speech\">{{portrait}}<div class=\"speech-copy\"><div class=\"person\">{{candidat}}</div><p>{{capacite}}</p>",
+        "</div></div><div class=\"compare\"><p><b>Votre décision :</b> {{decision}}.</p>",
+        "<p><b>Application du règlement :</b> <span class=\"success\">correcte.</span></p>",
+        "<p><b>Correspondance avec la réalité fictive :</b> {{decision_conforme}}.</p>",
+        "</div><p class=\"note\"><b>{{bilan_decision}}</b></p>{{commentaire_dossier}}<div class=\"note\">Cette certitude existe parce que le <b>jeu connaît le paramètre secret</b>. Dans une enquête réelle, on ne peut pas consulter ce paramètre : nos conclusions restent incertaines.</div>"
+      ],
+      "actions": {
+        "poursuivre": {
+          "libelle": "Poursuivre →"
+        },
+        "revoir_cartes_dossier": {
+          "libelle": "Revoir les cartes du dossier"
+        }
+      },
+      "commentaire_dossier": {
+        "basile": [
+          "<p><b>Basile :</b> « Je voulais tester votre Bureau ! Je ne vois pas l’avenir. J’ai eu beaucoup de chance… »</p>",
+          "<p>Sa déclaration ne constitue pas une preuve : c’est le <b>paramètre secret fixé avant le tirage</b> qui nous indique ici sa capacité réelle fictive.</p>"
+        ],
+        "autres_dossiers": {
+          "noor": [
+            "<p><b>Noor :</b> « Je sais que cinq bonnes réponses ne sont pas impressionnantes. Pourtant, ce que je ressens n’est pas toujours assez précis pour réussir toutes les fois. »</p>",
+            "<p>Dans notre monde fictif, le programme lui avait attribué <b>38 % de chance de réussir</b> au lieu de 20 %. Les vingt cartes ne suffisent pas forcément à détecter cette différence. Une série beaucoup plus longue fournirait davantage d’information, sans garantir une conclusion certaine.</p>"
+          ],
+          "autres_candidats": "<p>Les capacités ont été tirées au sort et fixées <b>avant le premier tirage</b>. Ce paramètre secret permet au jeu de révéler la réalité fictive de ce dossier.</p>"
+        }
+      },
+      "bilan_decision": {
+        "decision_conforme": "Votre décision correspond à la réalité fictive du dossier.",
+        "decision_non_conforme": {
+          "rejet": "Fausse découverte : vous avez correctement appliqué le règlement, mais la personne ne possédait aucun pouvoir.",
+          "non_rejet": "Pouvoir non détecté : vous avez correctement appliqué le règlement, mais cette personne possédait un pouvoir dans l’univers du jeu."
+        }
+      },
+      "capacite": {
+        "avec_pouvoir": "<b>Capacité fixée avant l’enquête : précognition fictive</b> (chance de réussir chaque prédiction : {{reussite_en_pourcent}} %).",
+        "sans_pouvoir": "<b>Capacité fixée avant l’enquête : aucune précognition</b> (chance de réussir : 20 %)."
+      }
+    },
+    "archives_cartes": {
+      "titre": "ARCHIVES — LES CINQ DERNIÈRES CARTES",
+      "texte": [
+        "<p>Les prédictions et les tirages ont été enregistrés avant de rédiger le rapport. Voici la dernière série de {{candidat}}.</p>",
+        "<div class=\"small-label\">Prédictions enregistrées</div>{{predictions}}<div class=\"small-label\">Cartes tirées</div>{{cartes_tirees}}<p>{{score}} réussites sur 20 au total.</p>"
+      ],
+      "actions": {
+        "revenir_archives_confidentielles": {
+          "libelle": "Revenir aux archives confidentielles"
+        }
+      }
+    },
+    "enquete_libre_terminee": {
+      "titre": "ENQUÊTE AUTONOME TERMINÉE",
+      "texte": [
+        "<p>Vous avez appliqué le règlement du Bureau, puis découvert les véritables capacités du candidat.</p>",
+        "<p>Dans cette enquête libre, la machine a décidé <b>au hasard, au début du dossier</b>, si la personne avait des pouvoirs. Ses capacités sont ensuite restées fixes pour les vingt prédictions.</p>",
+        "<p>Vous pouvez refaire une enquête avec un nouveau candidat, ou passer au dernier défi : <b>utiliser cette démarche hors du Bureau</b>.</p>"
+      ],
+      "actions": {
+        "dernier_defi_transfert_psychologie": {
+          "libelle": "Le dernier défi : transfert en psychologie →"
+        },
+        "enqueter_autre_personne": {
+          "libelle": "Enquêter sur une autre personne →"
+        },
+        "retour_laboratoire": {
+          "libelle": "Retour au laboratoire"
+        }
+      }
+    },
+    "choix_theme_epilogue": {
+      "titre": "ÉPILOGUE — CHANGER DE LABORATOIRE",
+      "texte": [
+        "<p>La démarche du Bureau peut-elle servir ailleurs ? Choisissez une étude de psychologie pour éprouver votre raisonnement.</p>",
+        "<p>Dans chaque étude, l’enquête porte sur <b>la différence entre deux groupes</b> et non sur des cartes de Zener.</p>"
+      ],
+      "actions": {
+        "tcc_peur_araignees": {
+          "libelle": "TCC et peur des araignées"
+        },
+        "exposition_repetee_preferences_musicales": {
+          "libelle": "Exposition répétée et préférences musicales"
+        },
+        "age_performances_memoire_etude_observationnelle": {
+          "libelle": "Âge et performances de mémoire (étude observationnelle)"
+        }
+      }
+    },
+    "fin_chapitre": {
+      "titre": "CHAPITRE 5 TERMINÉ — LE LIEN AVEC LE COURS",
+      "texte": [
+        "<p><b>Vous venez de suivre la logique du test de l’hypothèse nulle.</b></p>",
+        "<div class=\"compare\"><p>L’hypothèse que la personne examinée ne possède aucun pouvoir → <b>hypothèse nulle H₀</b>.</p>",
+        "<p>Les résultats que produirait le hasard sous cette hypothèse → <b>distribution des résultats sous H₀</b>.</p>",
+        "<p>La fréquence des résultats au moins aussi extrêmes → <b>valeur p</b> (estimée par simulation).</p>",
+        "<p>Le seuil de 5 % → <b>α = .05</b>, fixé avant de décider.</p>",
+        "<p>Remettre en question l’absence de pouvoirs → <b>rejeter H₀</b>.</p>",
+        "<p>Fausse découverte / pouvoir non détecté → <b>erreurs de type I / II</b>.</p>",
+        "</div><p><b>Professeur Sig. Nificatif :</b> « Nos décisions peuvent être justifiées sans être infaillibles. Il ne s’agit pas de lire la vérité dans un chiffre, mais de raisonner à partir d’un monde hypothétique et d’observations imparfaites. »</p>",
+        "<div class=\"note\">Pour évaluer ce que vous avez appris, vous pouvez maintenant répondre au questionnaire de fin sur Ametice, dans votre espace de cours.</div>"
+      ],
+      "actions": {
+        "relancer_enquete_aleatoire": {
+          "libelle": "Relancer une enquête aléatoire →"
+        },
+        "revenir_laboratoire": {
+          "libelle": "Revenir au laboratoire"
+        },
+        "retour_accueil_chapitres": {
+          "libelle": "Retour à l’accueil des chapitres"
+        }
+      }
+    },
+    "aide": {
+      "titre": "AIDE — CHAPITRE 5",
+      "texte": [
+        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la grande feuille en bas à gauche.</p>",
+        "<p><b>À droite :</b> candidat et terminal des tirages. <b>À gauche :</b> simulateur en haut, rapports sur la grande feuille en bas.</p>",
+        "<p><b>Règlement :</b> sous le modèle sans pouvoirs, si une performance au moins aussi bonne survient dans <b>5 % des cas ou moins</b>, on remet en question l’absence de pouvoirs. Sinon, on ne la remet pas en question.</p>",
+        "<p>Le jeu révèle les capacités réelles après chaque rapport. Le score de la démarche et la correspondance avec la réalité sont deux choses différentes.</p>"
+      ],
+      "actions": {
+        "reprendre": {
+          "libelle": "Reprendre"
+        }
+      }
+    }
+  },
+  "objectifs": {
+    "parler_salle_droite": "Parler à {{candidat}} dans la salle de droite",
+    "reveler_quatre_series_terminal_bas_droite": "Révéler les quatre séries au terminal, en bas à droite",
+    "remplir_rapport_table_bas_gauche": "Remplir le rapport sur la table en bas à gauche",
+    "rapport_table_bas_gauche": "Rapport sur la table, en bas à gauche",
+    "decouvrir_dossier_confidentiel_ouvert_apres_decision": "Découvrir le dossier confidentiel ouvert après la décision",
+    "ouvrir_prochaine_enquete_ou_defi_final": "Ouvrir la prochaine enquête ou le défi final",
+    "epilogue_choisir_enquete_reelle_psychologie": "Épilogue : choisir une enquête réelle de psychologie",
+    "epilogue_reconnaitre_demarche_test_hypothese_nulle": "Épilogue : reconnaître la démarche du test de l’hypothèse nulle",
+    "campagne_terminee_vous_pouvez_rejouer": "Campagne terminée — vous pouvez rejouer",
+    "campagne_terminee_enquetes_aleatoires_accessibles": "Campagne terminée — enquêtes aléatoires accessibles"
+  },
+  "notifications": {
+    "nouveau_dossier": "Nouveau dossier : {{candidat}}",
+    "approchez_vous_element_interactif": "Approchez-vous d’un élément interactif"
+  },
+  "decor": {
+    "bureau_archives": "BUREAU / ARCHIVES",
+    "rapport": "RAPPORT ↓",
+    "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
+    "bureau_dossiers": "BUREAU DES DOSSIERS",
+    "simulateur": "SIMULATEUR ↑",
+    "cartes": "CARTES ↑",
+    "terminal": "TERMINAL ↓"
+  },
+  "epilogue": {
+    "themes": {
+      "araignees": {
+        "titre": "TCC et phobie des araignées",
+        "presentation": "Des adultes présentant une peur marquée des araignées sont répartis au hasard entre une TCC et une liste d’attente. On mesure ensuite leur score de peur.",
+        "phenomene": "la TCC",
+        "mesure": "le score de peur"
+      },
+      "musique": {
+        "titre": "Exposition et préférences musicales",
+        "presentation": "Des personnes sont réparties au hasard entre une écoute répétée de morceaux et une écoute unique. Elles évaluent ensuite à quel point elles aiment les morceaux.",
+        "phenomene": "la répétition des écoutes",
+        "mesure": "les évaluations de préférence"
+      },
+      "memoire": {
+        "titre": "Âge et mémoire — étude observationnelle",
+        "presentation": "Une équipe compare les performances de mémoire de vingt adultes jeunes et vingt adultes plus âgés. Les groupes d’âge ne sont pas constitués par tirage au sort.",
+        "phenomene": "l’âge",
+        "mesure": "les scores de mémoire"
+      }
+    }
+  },
+  "personnages": {
+    "basile": "Basile",
+    "noor": "Noor",
+    "milo": "Milo",
+    "jade": "Jade",
+    "ana": "Ana"
+  }
+}
