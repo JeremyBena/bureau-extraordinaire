@@ -42,7 +42,7 @@
         "jouer": "Jouer au chapitre 5 →"
       }
     },
-    "note": "Prototype v0.8.1 | Fonctionne sur GitHub Pages | Aucune donnée personnelle n’est collectée."
+    "note": "Prototype v1 | Fonctionne sur GitHub Pages | Aucune donnée personnelle n’est collectée."
   },
   "a_propos": {
     "chapitre": {
@@ -117,7 +117,7 @@
     "confirmer_recommencer": "Recommencer ce chapitre ?",
     "titre_dialogue": "DIALOGUE",
     "titre_chapitre": "LE BUREAU DE L'EXTRAORDINAIRE",
-    "version": "VERSION 1.0 · INTERFACE ÉPURÉE",
+    "version": "VERSION 1",
     "objectif_initial": " - Prendre connaissance de votre mission",
     "etiquette_objectif": "OBJECTIF",
     "consignes_scene": "Cliquez sur les objets ou les personnages pour interagir.",
