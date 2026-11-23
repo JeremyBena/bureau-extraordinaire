@@ -1,5 +1,5 @@
 function portrait(file){
- return `<div class="speech-portrait"><img alt="" src="assets/${file}.png" draggable="false"></div>`;
+ return `<div class="speech-portrait"><img alt="" src="assets/${file}.png?v=10" draggable="false"></div>`;
 }
 function speechPanel(who,words,file){return `<div class="speech">${portrait(file)}<div class="speech-copy"><div class="person">${who}</div><p class="dialogue">${words}</p></div></div>`}
 function showAnswerReview(i,action,actions,original){
@@ -140,60 +140,87 @@ function zenerCanvasSymbol(id,cx,cy,scale=1){
  ctx.stroke();ctx.restore();
 }
 function upgradedRoom(){
- const txt=(t,x,y,color='#dce8d0',size=12)=>{ctx.fillStyle=color;ctx.font=`bold ${size}px monospace`;ctx.fillText(t,x,y)};
- px(0,0,800,450,'#102127');
- for(let i=0;i<40;i++)for(let j=0;j<23;j++)px(i*20,j*20,19,19,(i+j)%2?'#273b3a':'#2c403e');
- // exterior masonry and communicating door
- px(0,0,800,16,'#748274');px(0,433,800,17,'#748274');px(0,0,17,450,'#748274');px(782,0,18,450,'#748274');
- px(382,0,22,164,'#748274');px(382,269,22,181,'#748274');px(384,164,18,105,'#52605a');
- for(let y=172;y<259;y+=24){px(390,y,6,11,'#a8af8b')}
- txt(texte("decor.bureau_dossiers"),95,32,'#f2e0ae',13);
- txt(texte("decor.salle_experimentation"),464,32,'#f2e0ae',12);
- // books and wall cabinet
- px(31,72,117,30,'#302b2a');px(34,75,111,22,'#6f5644');
- for(let i=0;i<13;i++){let x=37+i*8;px(x,79,6,15,['#698c75','#bc856a','#d8bc83','#5b7a86'][i%4]);px(x+1,84,3,2,'#2c3736')}
- px(38,282,82,117,'#253133');for(let i=0;i<4;i++){px(42,288+i*27,74,23,'#718179');px(70,298+i*27,19,3,'#344942')}
- // simulator station, top-left
- px(45,50,136,73,'#755b48');px(50,55,126,62,'#9c7f5c');
- px(60,60,73,44,'#141d21');px(65,64,63,33,'#738b75');px(70,68,53,25,'#1c644d');
- for(let i=0;i<4;i++)px(75,73+i*5,28+i*4,2,i===0?'#d1f2c9':'#6bc8a1');
- px(81,99,30,8,'#545c53');px(75,105,43,4,'#444e48');
- px(143,72,23,32,'#d7ccb3');for(let i=0;i<3;i++)px(147,79+i*7,15,2,'#8a947a');
- txt(texte("decor.simulateur"),45,142,'#8de2b5',12);
- // clear dossier desk bottom left
- px(205,272,146,111,'#5c4436');px(210,277,136,101,'#9c8058');
- px(229,285,97,83,'#f0e3c0');px(236,292,83,7,'#beab84');
- for(let i=0;i<6;i++)px(238,307+i*9,70-i*3,2,'#a99778');
- px(315,343,5,7,'#a95e4d');txt(texte("decor.rapport"),231,265,'#ffe6a9',12);
- // subject experiment desk, right side
- px(464,70,170,78,'#5d453b');px(469,74,159,70,'#a78360');px(475,79,147,60,'#c3a078');
- for(let i=0;i<5;i++){px(481+i*25,100,20,30,'#e8dcc1');zenerCanvasSymbol(i,491+i*25,114,.75)}
- // panel with Zener cards, clear and recognizable
- px(670,48,104,125,'#253b39');px(676,54,92,113,'#dfd1ad');
- txt(texte("commun.interface.decor_zener"),688,67,'#253f3b',11);
- for(let i=0;i<5;i++){let xx=687+(i%3)*28,yy=83+Math.floor(i/3)*39;px(xx,yy,24,33,'#fff4d6');px(xx+2,yy+2,20,29,'#e3d9bf');zenerCanvasSymbol(i,xx+12,yy+17,.90)}
- txt(texte("decor.cartes"),681,190,'#f8d7a0',11);
- // experiment terminal, lower right
- px(574,273,156,99,'#785a41');px(580,279,144,85,'#9b7953');
- px(608,248,79,65,'#182328');px(614,254,67,49,'#91a78e');px(620,259,55,36,'#1b5e4e');
- zenerCanvasSymbol(4,648,276,1.1);px(628,313,42,7,'#474d42');
- for(let i=0;i<5;i++)px(586+i*15,340,11,16,'#e5dbb9');
- txt(texte("decor.terminal"),597,393,'#f8d7a0',11);
- // chairs and plants
- px(455,355,85,45,'#374b4a');px(466,362,65,19,'#a08a67');
- px(740,354,22,43,'#715644');px(736,336,30,22,'#467e60');
+ const caption=(s,x,y,col='#d9e2d6',size=12)=>{ctx.fillStyle=col;ctx.font=`bold ${size}px monospace`;ctx.fillText(s,x,y)};
+ // Minimaliste : deux zones lisibles, de grandes masses de couleur et peu de mobilier.
+ px(0,0,800,450,'#111f25');
+ px(14,15,770,419,'#55726c');
+ px(20,21,758,407,'#1a3438');
+ px(25,57,350,362,'#203a3e');
+ px(408,57,365,362,'#233d40');
+ px(25,47,350,6,'#334f4f');
+ px(408,47,365,6,'#334f4f');
+ px(375,47,33,113,'#627c76');
+ px(375,271,33,148,'#627c76');
+ px(380,160,23,111,'#29494a');
+ // En-têtes : repérage simple, pas de textures décoratives.
+ px(25,21,350,35,'#152c31');
+ px(408,21,365,35,'#152c31');
+ caption(texte('decor.bureau_dossiers'),68,43,'#f5dfaa',13);
+ caption(texte('decor.salle_experimentation'),457,43,'#f5dfaa',13);
+ // Simulateur, à gauche : un écran et un socle, sans accessoires parasites.
+ px(48,70,130,69,'#435b54');
+ px(54,76,118,52,'#0e2026');
+ px(60,82,106,40,'#173e3c');
+ px(68,91,26,22,'#69bd9d');
+ px(99,103,28,10,'#69bd9d');
+ px(132,96,24,4,'#bbd0b6');
+ px(132,105,18,4,'#bbd0b6');
+ px(89,139,47,6,'#6e8378');
+ // Table des rapports : dossier fermé avec un onglet, aucune feuille géante.
+ px(208,281,148,100,'#4e5448');
+ px(215,288,134,85,'#876f55');
+ px(241,300,77,61,'#eadbb7');
+ px(241,294,34,9,'#c8a86d');
+ px(250,311,57,7,'#385e59');
+ px(250,324,46,4,'#ada38a');
+ px(250,333,51,4,'#ada38a');
+ px(250,342,39,4,'#ada38a');
+ // À droite : plateau d'essai, juste cinq cartes (suppression des meubles ambigus).
+ px(466,74,174,71,'#725d49');
+ px(474,82,158,54,'#af9470');
+ for(let i=0;i<5;i++){
+  const x=483+i*29;
+  px(x,93,24,33,'#e9dfc5');
+  px(x+3,96,18,27,'#f8efd9');
+  zenerCanvasSymbol(i,x+12,110,.77);
+ }
+ // Tableau Zener : cinq symboles, une fonction explicite et aucune décoration supplémentaire.
+ px(667,70,101,101,'#5c756e');
+ px(672,75,91,91,'#eee4ca');
+ caption('ZENER',687,89,'#2a514a',10);
+ for(let i=0;i<5;i++){
+  const x=681+(i%3)*27, y=97+Math.floor(i/3)*30;
+  px(x,y,23,27,'#fdf6e7');
+  zenerCanvasSymbol(i,x+11.5,y+13.5,.72);
+ }
+ // Terminal de tirage : écran, clavier simple, aucun autre équipement.
+ px(577,285,136,87,'#695746');
+ px(584,292,122,74,'#8a775d');
+ px(602,268,88,61,'#27393a');
+ px(608,274,76,44,'#153d3b');
+ zenerCanvasSymbol(4,644,295,1.20);
+ px(624,321,43,6,'#4a5751');
+ px(598,345,84,11,'#d5caa7');
+ for(let i=0;i<5;i++)px(603+i*15,348,9,4,'#8b987f');
+ // Petit repère de circulation entre les deux pièces.
+ px(388,215,7,15,'#6f8d7d');
 }
 function upgradedCharacter(x,y,shirt='#789083',hair='#4c392f',skin='#dca985'){
- // A legible 28x47 pixel figure
- const isNull=(hair==='#c5c6c0'||hair==='#c1c3b8'||shirt==='#728e78');
- px(x-14,y-12,28,36,'#17272b');px(x-12,y-9,24,30,shirt);
- px(x-10,y+20,8,12,'#344a4f');px(x+2,y+20,8,12,'#344a4f');
- px(x-10,y-34,20,24,skin);px(x-13,y-31,5,18,hair);px(x+8,y-31,5,18,hair);
- if(isNull){px(x-10,y-35,20,7,'#d5d4c8');px(x-9,y-18,18,10,'#edece0');px(x-8,y-26,6,5,'#263b3b');px(x+2,y-26,6,5,'#263b3b');px(x-2,y-24,4,2,'#d9dcd0')}
- else{px(x-12,y-37,24,9,hair);px(x-10,y-30,4,8,hair)}
- px(x-5,y-25,2,2,'#26333a');px(x+3,y-25,2,2,'#26333a');
- px(x-3,y-16,6,2,isNull?'#7c695e':'#a76c62');
- px(x-16,y-5,4,17,shirt);px(x+12,y-5,4,17,shirt);
+ // Silhouette simple et volontairement peu détaillée, dessinée sans anti-aliasing.
+ const isProfessor=(hair==='#c5c6c0'||hair==='#c1c3b8'||shirt==='#728e78');
+ px(x-12,y-8,24,26,'#13282b');
+ px(x-10,y-6,20,24,shirt);
+ px(x-9,y+18,7,12,'#2c4247');px(x+2,y+18,7,12,'#2c4247');
+ px(x-9,y-30,18,23,skin);
+ px(x-11,y-32,22,8,isProfessor?'#dcded6':hair);
+ px(x-11,y-23,4,13,isProfessor?'#dcded6':hair);
+ px(x+7,y-23,4,13,isProfessor?'#dcded6':hair);
+ px(x-5,y-21,3,3,'#29363a');px(x+3,y-21,3,3,'#29363a');
+ if(isProfessor){
+  px(x-9,y-13,18,8,'#e8e7df');
+  px(x-6,y-22,7,6,'#2f4244');px(x+2,y-22,7,6,'#2f4244');
+  px(x-4,y-22,3,2,'#e8dcb9');px(x+4,y-22,3,2,'#e8dcb9');
+ }
 }
 room=upgradedRoom;
 if(typeof char!=='undefined')char=upgradedCharacter;

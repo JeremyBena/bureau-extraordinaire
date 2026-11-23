@@ -1,0 +1,35 @@
+/* Le Bureau de l’extraordinaire — interface épurée v1.0 */
+:root{--ink:#ecf0e3;--sub:#bad0c7;--gold:#f2d291;--mint:#92dabe;--line:#57756c}
+body{background:#0e1d22;color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.wrap{max-width:1120px;padding:25px 17px 48px}
+.head{margin-bottom:15px;align-items:center}
+.head h1{font-family:ui-monospace,Consolas,monospace;letter-spacing:.005em;font-weight:800;color:#f1daa7}
+.head p{color:#a9c1b7;letter-spacing:.08em}
+.stamp{background:#1e3435;border:1px solid #55726d;color:#d3eadb;padding:8px 12px;border-radius:3px}
+.shell{border:2px solid #657f78;background:#14272b;padding:5px;box-shadow:0 13px 36px #06101277}
+.game{background:#1c3439}
+.hud{background:#182c2e;border-color:#455f57;box-shadow:none;padding:12px 14px}
+.toolbar{gap:7px;margin-top:13px}
+.btn{background:#31594f;border:1px solid #90b7a5;border-radius:4px;color:#f8f5eb;box-shadow:none;transition:background .1s}
+.btn:hover:not(:disabled){background:#457569;transform:none}
+.btn.alt{background:#25383c;border-color:#5b7570}
+.btn.gold{background:#755b34;border-color:#cfa965}
+.modal,.overlay:not(.hidden) .modal{background:#203638!important;border:1px solid #819e92!important;border-radius:6px;box-shadow:0 14px 45px #0008!important}
+.modal h2{font-family:ui-monospace,monospace;letter-spacing:.03em;color:#ffe2a6;font-size:clamp(13px,1.55vw,18px)}
+.note,.compare{background:#23413e!important;border-color:#72a390!important}
+.review-answered{background:#21483e;border-left:4px solid #91deb6;color:#eff8ed}
+.speech-portrait{border:2px solid #8bb5a0;background:#203d37;box-shadow:none;border-radius:4px;overflow:hidden;flex-basis:86px;width:86px;height:86px}
+.speech-portrait img{image-rendering:pixelated;object-fit:cover;object-position:center;width:100%;height:100%}
+.scene-hotspot{border:2px solid transparent!important;background:transparent!important;outline:none!important;box-shadow:none!important;border-radius:6px;align-items:flex-end;justify-content:center;padding:1px}
+.scene-hotspot span{font-size:clamp(10px,1.14vw,12px);border:1px solid #719489;border-radius:3px;background:#112e30f0;color:#f4e6bb;padding:4px 7px;box-shadow:none;letter-spacing:.01em}
+.scene-hotspot:hover,.scene-hotspot:focus-visible{border-color:#a2d8bc!important;background:#89c4a522!important}
+.scene-hotspot[data-hotspot=report]{border-color:transparent!important;background:transparent!important}
+.scene-hotspot.is-next,.scene-hotspot[data-hotspot=report].is-next{border:2px solid #e9c26f!important;background:#deb76522!important;box-shadow:inset 0 0 0 1px #f4d99144!important}
+.scene-hotspot.is-next::before{box-shadow:0 1px 0 #142625;border:2px solid #fff0bd;top:-15px}
+.bottom{color:#acbfb8}
+.game .toast{border-radius:4px;box-shadow:0 4px 15px #0b2025aa}
+.transfer-example{background:#1c3638;padding:16px 18px;border-left:4px solid #86c7a7;border-radius:4px}
+.transfer-example h3{margin:0 0 10px;color:#ffe0a5;font-size:17px}
+.transfer-example p{line-height:1.6;margin:9px 0}
+.hero img{image-rendering:pixelated;object-fit:cover;border-radius:5px}
+@media(max-width:650px){.wrap{padding:12px 8px 26px}.speech-portrait{flex-basis:62px;width:62px;height:68px}.head h1{font-size:15px}.scene-hotspot span{font-size:10px;padding:3px 4px}}
