@@ -176,7 +176,7 @@
         "reponses": {
           "valeur_p": {
             "libelle": "Valeur p",
-            "feedback": "Une valeur p ne donne pas la probabilité que H₀ soit vraie."
+            "feedback": "Oui, c'est bien ça. Une valeur p ne donne pas la probabilité que H₀ soit vraie."
           },
           "probabilite_h0": {
             "libelle": "Probabilité de H₀"
