@@ -6,7 +6,7 @@
     "presentation": "Peut-on découvrir des pouvoirs de précognition en observant quelques cartes correctement prédites ? Cinq chapitres pour mobiliser le test de l’hypothèse nulle.",
     "professeur": "Professeur Sig. Nificatif",
     "citation": "'L’extraordinaire mérite une enquête ordinaire.'",
-    "commandes": "Cliquez sur les personnages et les objets pour interagir. Un symbole « ! » indique la prochaine étape.",
+    "commandes": "Commencez une partie ci-dessous. Une fois un chapitre lancé, laissez-vous guider : cliquez sur les personnages et les objets pour interagir. Un symbole « ! » indique la prochaine étape.",
     "portrait_alt": "Portrait pixel art du professeur Sig. Nificatif",
     "ouvrir_a_propos": "ⓘ À propos du jeu",
     "ouvrir_licence": "© Licence",
@@ -62,10 +62,10 @@
     "texte": [
       "<p><b>Le Bureau de l’extraordinaire</b> est un mini jeu pédagogique visant à faciliter la compréhension de la <b>démarche du test de l’hypothèse nulle</b> (NHST) utilisée en psychologie. Sa durée prévue est d’environ <b>30 à 40 minutes</b> pour les cinq chapitres.</p>",
       "<p>Le jeu prend pour point de départ la <b>précognition</b> : la prétendue capacité à prédire des événements futurs grâce à des pouvoirs psychiques. L’existence de tels pouvoirs n’a pas été établie par des preuves scientifiques robustes et reproductibles. Les pouvoirs attribués aux personnages dans le jeu sont <b>fictifs</b> : ils constituent un dispositif pédagogique pour illustrer le raisonnement statistique, et non une démonstration de phénomènes paranormaux.</p>",
-      "<div class=\"line\"></div><p><b>Conception scientifique et pédagogique :</b> Jérémy Béna, maître de conférences en psychologie à Aix-Marseille Université, département de psychologie cognitive, Centre de recherche en psychologie et neurosciences (CRPN, UMR 7077).</p>",
+      "<div class=\"line\"></div><p><b>Conception :</b> Jérémy Béna, maître de conférences en psychologie à Aix-Marseille Université, département de psychologie cognitive, Centre de recherche en psychologie et neurosciences (CRPN, UMR 7077).</p>",
       "<p><b>Développement du jeu :</b> réalisé avec l’assistance de ChatGPT (OpenAI, modèle GPT-6) pour la programmation, les dialogues, et certains éléments graphiques. Les portraits sont des illustrations générées avec une IA et retravaillées pour le jeu.</p>",
       "<p><b>Contact :</b> <a href=\"mailto:jeremy.bena@univ-amu.fr\">jeremy.bena@univ-amu.fr</a>.</p>",
-      "<p><b>Fonctionnement :</b> certaines enquêtes sont scénarisées pour assurer la progression pédagogique. Les parties du simulateur utilisent des tirages au hasard ; les enquêtes libres déterminent au hasard les capacités des personnages.</p>",
+      "<p><b>Fonctionnement :</b> certaines enquêtes sont scénarisées pour assurer la progression pédagogique. Les parties du simulateur utilisent des tirages au hasard ; les enquêtes libres dans le Chapitre 5 déterminent au hasard les capacités des personnages.</p>",
       "<p><b>Version :</b> prototype 0.8.1, novembre 2026.</p>"
     ]
   },
