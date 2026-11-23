@@ -88,10 +88,13 @@
     },
     "bilan_noor": {
       "personnage": "Professeur Sig. Nificatif",
-      "texte": "Les deux dossiers étaient instructifs. Le jeu avait fixé les paramètres des capacités avant les tirages : Basile n’avait aucun pouvoir, mais a obtenu une performance exceptionnelle. Noor avait un pouvoir relativement faible, que cette expérience n’a pas permis de détecter. Voyons ce que vous feriez avec une personne dont <b>les véritables capacités sont tirées au sort</b>.",
+      "texte": "Les deux dossiers montrent qu’une décision conforme au règlement peut malgré tout être erronée. Basile n’avait aucun pouvoir : c’est une fausse alerte. Noor avait des capacités réelles, mais elles sont passées inaperçues. Vous pouvez poursuivre avec un exemple de psychologie ou mener une enquête aléatoire supplémentaire.",
       "actions": {
         "commencer_enquete_aleatoire": {
-          "libelle": "Commencer une enquête aléatoire →"
+          "libelle": "Faire d’abord une enquête aléatoire →"
+        },
+        "passer_epilogue": {
+          "libelle": "Passer aux exemples de psychologie →"
         }
       }
     }
@@ -108,12 +111,12 @@
         "rejeter_absence_pouvoir": {
           "libelle": "Remettre en question l’absence de pouvoirs.",
           "feedback": "Cette fréquence ne dépasse pas 5 %. Le règlement conduit à remettre en question l’absence de pouvoirs. Cela ne garantit pourtant pas l’existence de pouvoirs.",
-          "feedback_erreur": "Cette fréquence est supérieur à 5 %. Cette performance n’est pas suffisamment rare selon notre règlement."
+          "feedback_erreur": "Cette fréquence est supérieure à 5 %. Cette performance n’est pas suffisamment rare selon notre règlement."
         },
         "maintenir_absence_pouvoir": {
           "libelle": "Ne pas remettre en question l’absence de pouvoirs.",
           "feedback": "Cette fréquence dépasse 5 %. Le règlement ne nous autorise pas à remettre en question l’absence de pouvoirs. Cela ne prouve pas l’absence de pouvoir.",
-          "feedback_erreur": "Cette fréquence est inférieur ou égal à 5 %. Le règlement conduit à remettre en question l’absence de pouvoirs."
+          "feedback_erreur": "Cette fréquence est inférieure ou égal à 5 %. Le règlement conduit à remettre en question l’absence de pouvoirs."
         },
         "conclusion_certaine": {
           "libelle": "Conclure avec certitude si des pouvoirs existent.",
@@ -126,123 +129,18 @@
         }
       }
     },
-    "hypothese_epilogue": {
-      "titre": "ÉPILOGUE — {{titre_theme}}",
-      "texte": [
-        "<p>{{presentation_theme}}</p>",
-        "<p>Les deux groupes présentent un écart observé de <b>3 points</b> sur la mesure étudiée (valeur illustrative).</p>",
-        "<p><b>Quelle hypothèse permet de construire un monde de comparaison ?</b></p>{{feedback}}"
-      ],
-      "reponses": {
-        "absence_effet": {
-          "libelle": "{{phenomene}} n’a pas d’effet sur {{mesure}}.",
-          "feedback": "Le point de départ est un monde dans lequel le phénomène étudié ne produit aucune différence."
-        },
-        "effet_present": {
-          "libelle": "L’effet est présent et suffisamment important pour être visible chez chaque personne.",
-          "feedback": "Nous souhaitons justement évaluer si les observations justifient de remettre en question l’absence d’effet."
-        },
-        "moyennes_identiques": {
-          "libelle": "Les moyennes observées des deux groupes doivent nécessairement être identiques.",
-          "feedback": "Même si aucun effet n’existe, les moyennes calculées sur deux échantillons peuvent différer."
-        },
-        "scores_identiques": {
-          "libelle": "Les participants doivent nécessairement obtenir le même score.",
-          "feedback": "Une hypothèse d’absence d’effet n’implique pas que les performances soient identiques entre les individus."
-        }
-      }
-    },
-    "simulation_epilogue": {
-      "titre": "ÉPILOGUE — CONSTRUIRE LE MONDE SANS EFFET",
-      "texte": "<p>{{contexte}}</p><p><b>Que faire pour examiner ce que produirait le hasard ?</b></p>{{feedback}}",
-      "reponses": {
-        "repartir_les_scores": {
-          "libelle": {
-            "memoire": "Réattribuer fictivement les étiquettes des groupes aux scores, sous l’hypothèse d’échangeabilité.",
-            "experience": "Redistribuer au hasard les 40 scores entre deux groupes de 20, puis recommencer."
-          },
-          "feedback": "Cette démarche construit une distribution de comparaison sous l’hypothèse de référence ; son interprétation dépend des hypothèses retenues."
-        },
-        "difference_observee": {
-          "libelle": "Calculer seulement la différence entre les deux moyennes observées.",
-          "feedback": "Cela décrit l’observation, mais ne montre pas quelle différence le hasard pourrait produire sous l’hypothèse retenue."
-        },
-        "comparer_scores_identiques": {
-          "libelle": "Comparer seulement les personnes ayant obtenu exactement le même score.",
-          "feedback": "L’objectif est d’examiner une différence entre groupes, pas de chercher des copies de chaque score individuel."
-        },
-        "modifier_les_scores": {
-          "libelle": "Modifier les scores pour effacer artificiellement les différences.",
-          "feedback": "Nous ne voulons pas fabriquer de données conformes à notre hypothèse."
-        }
-      },
-      "contexte": {
-        "memoire": "Pour cette étude d’âge, la formation des groupes n’est pas aléatoire. On peut comparer les scores en imaginant un monde où leurs distributions seraient identiques, à condition d’admettre que les observations sont échangeables sous cette hypothèse. Cela ne permettrait pas, à soi seul, d’attribuer une différence à l’âge.",
-        "experience": "Les quarante personnes ont été réparties au hasard en deux groupes de vingt. Nous disposons des quarante scores. Sous une hypothèse d’absence d’effet individuel, nous pouvons redistribuer ces scores entre les deux groupes."
-      }
-    },
-    "interpretation_epilogue": {
-      "titre": "ÉPILOGUE — INTERPRÉTER LES SIMULATIONS",
-      "texte": [
-        "<p>Imaginons que le programme ait créé <b>1 000 répartitions fictives</b> respectant notre hypothèse de comparaison. Pour cette activité, le nombre de simulations a été fixé à l’avance. Les résultats ci-dessous sont <b>un exemple fictif fourni pour cet exercice</b>, et non une nouvelle simulation en direct.</p>",
-        "<div class=\"stats\"><div class=\"stat\"><b>1 000</b><span>répartitions aléatoires</span></div><div class=\"stat\"><b>42</b><span>différences d’au moins 3 points en valeur absolue</span></div><div class=\"stat\"><b>4,2 %</b><span>fréquence simulée</span></div></div><p><b>Que signifie ce 4,2 % ?</b></p>{{feedback}}"
-      ],
-      "reponses": {
-        "frequence_sous_h0": {
-          "libelle": "En supposant l’absence d’effet, environ 4,2 % des répartitions simulées donnent une différence au moins aussi extrême.",
-          "feedback": "C’est une estimation de la valeur p, ici à partir d’une simulation sous l’hypothèse nulle."
-        },
-        "probabilite_absence_effet": {
-          "libelle": "La probabilité que la méthode n’ait aucun effet est de 4,2 %.",
-          "feedback": "Cette fréquence concerne les résultats produits dans un monde où l’effet est supposé absent, et non la probabilité de cette hypothèse."
-        },
-        "probabilite_de_l_effet": {
-          "libelle": "La probabilité que la méthode fonctionne est de 95,8 %.",
-          "feedback": "Nous ne calculons pas directement la probabilité que la méthode ait un effet."
-        },
-        "difference_exacte": {
-          "libelle": "Il y a 4,2 % de chances de retrouver exactement trois points de différence.",
-          "feedback": "Nous comptons les différences aussi extrêmes ou davantage, et pas seulement celles qui sont exactement égales à trois points."
-        }
-      }
-    },
-    "conclusion_epilogue": {
-      "titre": "ÉPILOGUE — FORMULER UNE CONCLUSION",
-      "texte": [
-        "<p>Dans ce laboratoire de psychologie, nous estimons à <b>4,2 %</b> la fréquence de résultats au moins aussi extrêmes dans le monde sans effet. La règle de décision avait été fixée à <b>5 %</b>.</p>",
-        "<p><b>Quelle conclusion est justifiée ?</b></p>{{feedback}}"
-      ],
-      "reponses": {
-        "rejeter_absence_effet": {
-          "libelle": "Rejeter l’absence d’effet, sans prétendre être certain que la méthode fonctionne.",
-          "feedback": "La règle conduit à rejeter H₀ ; comme dans le dossier de Basile, cette décision peut néanmoins être erronée."
-        },
-        "prouver_amelioration": {
-          "libelle": "Démontrer que la méthode améliore nécessairement la mémoire.",
-          "feedback": "Un résultat rare sous l’hypothèse nulle n’établit pas avec certitude la réalité de l’effet, ni même sa direction."
-        },
-        "probabilite_de_h0": {
-          "libelle": "Conclure que l’absence d’effet est vraie avec une probabilité de 4,2 %.",
-          "feedback": "La fréquence de résultats extrêmes sous une hypothèse n’est pas la probabilité que cette hypothèse soit vraie."
-        },
-        "maintenir_absence_effet": {
-          "libelle": "Ne pas rejeter l’absence d’effet puisque 42 simulations sur 1 000 lui ressemblent.",
-          "feedback": "Selon le seuil fixé avant l’enquête, une fréquence estimée de 4,2 % conduit à rejeter l’hypothèse nulle."
-        }
-      }
-    },
     "lien_avec_le_cours": {
       "titre": "LE LIEN AVEC LE COURS — {{numero_question}}/5",
-      "texte": "<p>Avant de dévoiler les correspondances, retrouvez vous-même le vocabulaire statistique.</p><div class=\"note\">{{definition}}</div><p><b>Quel concept du cours correspond à cette idée ?</b></p>{{feedback}}",
+      "texte": "<p>Dernière étape : retrouvez les termes du cours dans ce que vous avez appris au Bureau.</p><div class=\"note\">{{definition}}</div><p><b>De quel concept s’agit-il ?</b></p>{{feedback}}",
       "feedback_incorrect": "Ce concept ne correspond pas à cette étape de l’enquête. Reprenez la définition et essayez à nouveau."
     },
     "associations": {
       "hypothese_nulle": {
-        "definition": "L’affirmation selon laquelle le phénomène étudié ne produit pas l’effet recherché.",
+        "definition": "L’hypothèse de départ : on suppose qu’il n’y a pas de pouvoir ou que la manipulation étudiée ne produit pas de différence systématique.",
         "reponses": {
           "hypothese_nulle": {
             "libelle": "Hypothèse nulle (H₀)",
-            "feedback": "H₀ décrit le monde de comparaison dans lequel on suppose l’absence de l’effet étudié."
+            "feedback": "H₀ définit le monde de comparaison. Elle ne signifie pas que tous les résultats observés doivent être identiques."
           },
           "valeur_p": {
             "libelle": "Valeur p"
@@ -256,11 +154,11 @@
         }
       },
       "distribution_sous_h0": {
-        "definition": "Les résultats que l’on pourrait obtenir dans le monde de comparaison.",
+        "definition": "L’ensemble des résultats possibles si l’hypothèse nulle était vraie.",
         "reponses": {
           "distribution_sous_h0": {
             "libelle": "Distribution sous H₀",
-            "feedback": "Cette distribution rassemble les résultats possibles si H₀ est vraie, sous les hypothèses utilisées."
+            "feedback": "Elle permet de situer le résultat observé parmi ceux que l’on pourrait obtenir sous H₀."
           },
           "seuil_alpha": {
             "libelle": "Seuil α"
@@ -274,11 +172,11 @@
         }
       },
       "valeur_p": {
-        "definition": "La fréquence des résultats au moins aussi extrêmes que l’observation, sous H₀.",
+        "definition": "Si H₀ était vraie, la probabilité d’obtenir un résultat au moins aussi extrême que celui observé.",
         "reponses": {
           "valeur_p": {
             "libelle": "Valeur p",
-            "feedback": "La valeur p porte sur les données sous l’hypothèse nulle, pas sur la probabilité que H₀ soit vraie."
+            "feedback": "Une valeur p ne donne pas la probabilité que H₀ soit vraie."
           },
           "probabilite_h0": {
             "libelle": "Probabilité de H₀"
@@ -292,11 +190,11 @@
         }
       },
       "seuil_alpha": {
-        "definition": "La limite de rareté choisie avant de prendre une décision.",
+        "definition": "Le seuil fixé à l’avance pour décider quand un résultat est jugé suffisamment rare sous H₀.",
         "reponses": {
           "seuil_alpha": {
             "libelle": "Seuil α",
-            "feedback": "Le seuil α définit une règle de décision, il n’est pas calculé à partir des résultats."
+            "feedback": "Dans notre Bureau, le seuil choisi était de 5 %."
           },
           "valeur_p": {
             "libelle": "Valeur p"
@@ -310,11 +208,11 @@
         }
       },
       "rejet_h0": {
-        "definition": "Remettre en question H₀ lorsque la valeur p est inférieure ou égale au seuil choisi.",
+        "definition": "La décision prise lorsque la valeur p est inférieure ou égale au seuil choisi.",
         "reponses": {
           "rejet_h0": {
             "libelle": "Rejet de H₀",
-            "feedback": "Rejeter H₀ est une décision fondée sur le modèle et les observations, pas une certitude absolue."
+            "feedback": "Rejeter H₀ n’est pas une preuve absolue : Basile nous l’a montré."
           },
           "preuve_h0_vraie": {
             "libelle": "Preuve que H₀ est vraie"
@@ -475,8 +373,8 @@
     "choix_theme_epilogue": {
       "titre": "ÉPILOGUE — CHANGER DE LABORATOIRE",
       "texte": [
-        "<p>La démarche du Bureau peut-elle servir ailleurs ? Choisissez une étude de psychologie pour éprouver votre raisonnement.</p>",
-        "<p>Dans chaque étude, l’enquête porte sur <b>la différence entre deux groupes</b> et non sur des cartes de Zener.</p>"
+        "<p>La démarche du Bureau ne s’applique pas seulement aux cartes de Zener. Voici trois exemples de recherches en psychologie.</p>",
+        "<p>Choisissez un exemple pour voir ce que les chercheurs pourraient comparer, ou passez directement au dernier exercice qui fait le lien avec votre cours.</p>"
       ],
       "actions": {
         "tcc_peur_araignees": {
@@ -487,6 +385,9 @@
         },
         "age_performances_memoire_etude_observationnelle": {
           "libelle": "Âge et performances de mémoire (étude observationnelle)"
+        },
+        "passer_au_quiz": {
+          "libelle": "Faire le lien avec les concepts du cours →"
         }
       }
     },
@@ -518,14 +419,26 @@
     "aide": {
       "titre": "AIDE — CHAPITRE 5",
       "texte": [
-        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la grande feuille en bas à gauche.</p>",
-        "<p><b>À droite :</b> candidat et terminal des tirages. <b>À gauche :</b> simulateur en haut, rapports sur la grande feuille en bas.</p>",
-        "<p><b>Règlement :</b> sous le modèle sans pouvoirs, si une performance au moins aussi bonne survient dans <b>5 % des cas ou moins</b>, on remet en question l’absence de pouvoirs. Sinon, on ne la remet pas en question.</p>",
-        "<p>Le jeu révèle les capacités réelles après chaque rapport. Le score de la démarche et la correspondance avec la réalité sont deux choses différentes.</p>"
+        "<p><b>Pour jouer :</b> cliquez sur un personnage ou sur une zone indiquée. Le point d’exclamation signale l’étape suivante.</p>",
+        "<p><b>À droite :</b> la personne candidate, les cartes et le terminal de tirage. <b>À gauche :</b> le simulateur et la table des rapports.</p>",
+        "<p><b>Décision :</b> une performance obtenue dans 5 % des cas ou moins sous le modèle sans pouvoirs conduit à remettre en question ce modèle.</p>",
+        "<p><b>Fin du chapitre :</b> après les dossiers de Basile et Noor, les exemples de psychologie et les questions du cours sont accessibles directement.</p>"
       ],
       "actions": {
         "reprendre": {
           "libelle": "Reprendre"
+        }
+      }
+    },
+    "exemple_psychologie": {
+      "titre": "ÉPILOGUE — UN EXEMPLE EN PSYCHOLOGIE",
+      "message": "Comme avec les cartes, on part d’un monde de comparaison où les groupes ne présentent pas de différence systématique. On se demande ensuite si la différence observée serait surprenante dans ce monde. Les calculs changent, mais la logique générale reste la même.",
+      "actions": {
+        "lien_cours": {
+          "libelle": "Dernier exercice : le lien avec le cours →"
+        },
+        "autres_exemples": {
+          "libelle": "Voir les autres exemples"
         }
       }
     }
@@ -548,7 +461,7 @@
   },
   "decor": {
     "bureau_archives": "BUREAU / ARCHIVES",
-    "rapport": "RAPPORT ↓",
+    "rapport": "RAPPORTS ↓",
     "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
     "bureau_dossiers": "BUREAU DES DOSSIERS",
     "simulateur": "SIMULATEUR ↑",
@@ -559,19 +472,19 @@
     "themes": {
       "araignees": {
         "titre": "TCC et phobie des araignées",
-        "presentation": "Des adultes présentant une peur marquée des araignées sont répartis au hasard entre une TCC et une liste d’attente. On mesure ensuite leur score de peur.",
+        "presentation": "On répartit au hasard des personnes qui ont peur des araignées en deux groupes : l’un suit une thérapie cognitive et comportementale (TCC), l’autre est sur liste d’attente. On compare ensuite leurs scores de peur.",
         "phenomene": "la TCC",
         "mesure": "le score de peur"
       },
       "musique": {
         "titre": "Exposition et préférences musicales",
-        "presentation": "Des personnes sont réparties au hasard entre une écoute répétée de morceaux et une écoute unique. Elles évaluent ensuite à quel point elles aiment les morceaux.",
+        "presentation": "On demande à un groupe d’écouter plusieurs fois des morceaux de musique et à un autre de les écouter une seule fois. Les personnes indiquent ensuite à quel point elles aiment les morceaux.",
         "phenomene": "la répétition des écoutes",
         "mesure": "les évaluations de préférence"
       },
       "memoire": {
         "titre": "Âge et mémoire — étude observationnelle",
-        "presentation": "Une équipe compare les performances de mémoire de vingt adultes jeunes et vingt adultes plus âgés. Les groupes d’âge ne sont pas constitués par tirage au sort.",
+        "presentation": "On compare les performances à un test de mémoire de personnes jeunes et plus âgées. Il s’agit d’une comparaison entre groupes d’âge, sans répartition au hasard.",
         "phenomene": "l’âge",
         "mesure": "les scores de mémoire"
       }

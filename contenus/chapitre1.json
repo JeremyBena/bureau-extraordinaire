@@ -356,7 +356,7 @@
     "aide": {
       "titre": "COMMANDES ET OBJECTIF",
       "texte": [
-        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la grande feuille en bas à gauche.</p>",
+        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la table des rapports en bas à gauche.</p>",
         "<p><b>Interaction :</b> cliquez sur l’élément souhaité. Aucun déplacement au clavier n’est nécessaire.</p>",
         "<p><b>But :</b> observer une prédiction et comprendre ce qu’elle nous apprend en comparant avec des personnes sans capacités de précognition.</p>",
         "<p class=\"tiny\">Le jeu ne collecte aucune donnée. Les simulations sont exécutées localement.</p>"
@@ -390,7 +390,7 @@
     "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
     "bureau_dossiers": "BUREAU DES DOSSIERS",
     "simulateur": "SIMULATEUR ↑",
-    "rapport": "RAPPORT ↓",
+    "rapport": "RAPPORTS ↓",
     "cartes": "CARTES ↑",
     "terminal": "TERMINAL ↓"
   }

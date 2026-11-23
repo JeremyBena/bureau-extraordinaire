@@ -79,7 +79,7 @@
     },
     "explication_rarete": {
       "personnage": "Professeur Sig. Nificatif",
-      "texte": "Exactement. Avec les règles connues du tirage, <b>8 réussites ou davantage</b> se produisent environ <b>3 fois sur 100</b> en l’absence de pouvoirs. Nous avons maintenant de quoi rédiger un rapport. Le <b>bureau des dossiers se trouve en bas de la pièce de gauche</b>, sur la grande feuille claire.",
+      "texte": "Exactement. Avec les règles connues du tirage, <b>8 réussites ou davantage</b> se produisent environ <b>3 fois sur 100</b> en l’absence de pouvoirs. Nous avons maintenant de quoi rédiger un rapport. Le <b>bureau des dossiers se trouve en bas de la pièce de gauche</b>, sur la table des rapports claire.",
       "actions": {
         "aller_rediger_rapport": {
           "libelle": "Aller rédiger le rapport →"
@@ -417,7 +417,7 @@
     "aide": {
       "titre": "AIDE — CHAPITRE 3",
       "texte": [
-        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la grande feuille en bas à gauche.</p>",
+        "<p><b>Commandes :</b> cliquez directement sur les personnages ou objets indiqués. Le rapport est sur la table des rapports en bas à gauche.</p>",
         "<p><b>Repères :</b> la salle de droite accueille Salomé et le terminal. Dans la salle de gauche, le <b>simulateur est en haut</b> et le <b>rapport est sur la table en bas</b>.</p>",
         "<div class=\"note\"><b>Partie virtuelle :</b> une expérience entièrement inventée et tirée au hasard par l’ordinateur, sans participant réel et sans pouvoirs.</div><p>Objectif : comprendre pourquoi, pour apprécier une performance de 8 réussites sur 20, il faut compter les performances <b>au moins aussi bonnes</b>.</p>"
       ],
@@ -434,7 +434,7 @@
     "trouver_simulateur_s_03_haut_gauche": "Trouver le simulateur S-03 en haut à gauche",
     "lancer_4_series_5_cartes_terminal_bas": "Lancer les 4 séries de 5 cartes au terminal, en bas à droite",
     "simuler_series_20_cartes_observer_repartition": "Simuler des séries de 20 cartes et observer la répartition",
-    "rapport_piece_gauche_grande_feuille_claire_bas": "Rapport : pièce gauche, grande feuille claire en bas",
+    "rapport_piece_gauche_grande_feuille_claire_bas": "Rapport : pièce gauche, table des rapports, en bas à gauche",
     "chapitre_3_termine_dossier_valide": "Chapitre 3 terminé — dossier validé"
   },
   "notifications": {
@@ -443,7 +443,7 @@
   },
   "decor": {
     "bureau_archives": "BUREAU / ARCHIVES",
-    "rapport": "RAPPORT ↓",
+    "rapport": "RAPPORTS ↓",
     "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
     "bureau_dossiers": "BUREAU DES DOSSIERS",
     "simulateur": "SIMULATEUR ↑",

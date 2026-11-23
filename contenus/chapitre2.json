@@ -34,7 +34,7 @@
     },
     "invitation_au_rapport": {
       "personnage": "Professeur Sig. Nificatif",
-      "texte": "Votre rapport est prêt. Allez <b>dans la pièce de gauche</b> : c’est la <b>grande feuille claire sur la table du bas</b>."
+      "texte": "Votre rapport est prêt. Allez <b>dans la pièce de gauche</b> : c’est la <b>dossier sur la table des rapports, en bas à gauche</b>."
     },
     "invitation_au_terminal": {
       "personnage": "Professeur Sig. Nificatif",
@@ -83,7 +83,7 @@
     },
     "explication_rarete": {
       "personnage": "Professeur Sig. Nificatif",
-      "texte": "Exactement. Avec cinq cartes indépendantes, chaque prédiction correcte a une chance sur cinq de se produire sans pouvoir. Une réussite parfaite est donc possible, mais très rare : <b>une chance sur 3 125</b>. Ce résultat reste possible même sans aucun pouvoir. Vous pouvez maintenant déposer votre rapport. Il se trouve <b>dans la pièce de gauche, sur la grande feuille claire posée sur le bureau, en bas de la salle</b>.",
+      "texte": "Exactement. Avec cinq cartes indépendantes, chaque prédiction correcte a une chance sur cinq de se produire sans pouvoir. Une réussite parfaite est donc possible, mais très rare : <b>une chance sur 3 125</b>. Ce résultat reste possible même sans aucun pouvoir. Vous pouvez maintenant déposer votre rapport. Il se trouve <b>dans la pièce de gauche, sur la table des rapports, en bas à gauche</b>.",
       "actions": {
         "rediger_rapport": {
           "libelle": "Rédiger le rapport →"
@@ -329,7 +329,7 @@
     "lancer_cinq_tirages_terminal_droite": "Lancer les cinq tirages au terminal, à droite",
     "rejoindre_simulateur_s_02_gauche": "Rejoindre le simulateur S-02, à gauche",
     "simuler_parties_sans_pouvoirs_puis_comparer_resultats": "Simuler des parties sans pouvoirs, puis comparer les résultats",
-    "rapport_piece_gauche_grande_feuille_claire_bas": "Rapport : pièce de gauche, grande feuille claire en bas",
+    "rapport_piece_gauche_grande_feuille_claire_bas": "Rapport : pièce de gauche, table des rapports, en bas à gauche",
     "chapitre_2_termine_rapport_valide": "Chapitre 2 terminé — rapport validé"
   },
   "notifications": {
@@ -339,7 +339,7 @@
   "decor": {
     "bureau_archives": "BUREAU / ARCHIVES",
     "salle_experimentation": "SALLE D’EXPÉRIMENTATION",
-    "rapport": "RAPPORT ↓",
+    "rapport": "RAPPORTS ↓",
     "bureau_dossiers": "BUREAU DES DOSSIERS",
     "simulateur": "SIMULATEUR ↑",
     "cartes": "CARTES ↑",
