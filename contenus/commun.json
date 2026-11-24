@@ -26,19 +26,19 @@
       "chapitre3": {
         "numero": "CHAPITRE 03",
         "titre": "Une performance imparfaite",
-        "presentation": "Huit réussites sur vingt : quelles performances doit-on compter dans la comparaison ?",
+        "presentation": "Huit réussites sur vingt essais : quelles performances compter dans la comparaison ?",
         "jouer": "Jouer au chapitre 3 →"
       },
       "chapitre4": {
         "numero": "CHAPITRE 04",
         "titre": "Le règlement du Bureau",
-        "presentation": "Comparer 7 et 8 réussites sur 20 et adopter un seuil de décision commun.",
+        "presentation": "Comparer 7 et 8 réussites sur 20 essais et adopter un seuil de décision commun.",
         "jouer": "Jouer au chapitre 4 →"
       },
       "chapitre5": {
         "numero": "CHAPITRE 05",
         "titre": "Le prix de l’incertitude",
-        "presentation": "Une bonne décision peut être fausse : enquêtes révélées, dossiers aléatoires et transfert vers la psychologie.",
+        "presentation": "Une bonne décision peut être erronée : encore quelques enquêtes et transfert vers la psychologie.",
         "jouer": "Jouer au chapitre 5 →"
       }
     },
