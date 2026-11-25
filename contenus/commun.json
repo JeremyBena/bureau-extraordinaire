@@ -66,7 +66,8 @@
       "<p><b>Développement du jeu :</b> réalisé avec l’assistance de ChatGPT (OpenAI, modèle GPT-6) pour la programmation, les dialogues, et certains éléments graphiques. Les portraits sont des illustrations générées avec une IA et retravaillées pour le jeu.</p>",
       "<p><b>Contact :</b> <a href=\"mailto:jeremy.bena@univ-amu.fr\">jeremy.bena@univ-amu.fr</a>.</p>",
       "<p><b>Fonctionnement :</b> certaines enquêtes sont scénarisées pour assurer la progression pédagogique. Les parties du simulateur utilisent des tirages au hasard ; les enquêtes libres dans le Chapitre 5 déterminent au hasard les capacités des personnages.</p>",
-      "<p><b>Version :</b> prototype 0.8.1, novembre 2026.</p>"
+      "<p>Merci à Nicolas Pichot pour ses retours sur une précédente version du jeu.</p>",
+      "<p><b>Version :</b> prototype 0.8.1, novembre 2026.</p>"    
     ]
   },
   "licence": {
@@ -89,9 +90,7 @@
         "<p><a href=\"index.html\">← Retour au jeu</a></p>",
         "<h1>Licence et réutilisation</h1><p><b>Contenus pédagogiques et illustrations originales :</b> CC BY 4.0 International, dans la mesure des droits détenus par leur auteur.</p>",
         "<p>Réutilisation et adaptation autorisées, y compris pour un usage commercial, sous réserve d’attribution et d’indication des modifications.</p>",
-        "<p>Certains portraits sont produits avec un outil de génération d’images. La licence s’applique aux droits éventuellement détenus et susceptibles d’être concédés sur ces œuvres.</p>",
-        "<p>Merci à Nicolas Pichot pour ses retours sur une précédente version du jeu.</p>"
-      ]
+        "<p>Certains portraits sont produits avec un outil de génération d’images. La licence s’applique aux droits éventuellement détenus et susceptibles d’être concédés sur ces œuvres.</p>"      ]
     }
   },
   "remerciements": {
